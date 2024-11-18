@@ -167,7 +167,7 @@
                                                     <li class="message-list-item">
                                                         <a href="#">
                                                             <div class="media">
-                                                                <img class="mr-3 thumb-md rounded-circle" src="images/users/user-2.jpg" alt="">
+                                                                <img class="mr-3 thumb-md rounded-circle" src="{{asset('images/users/user-2.jpg')}}" alt="">
                                                                 <div class="media-body">
                                                                     <p class="float-right font-12 text-muted">Just Now</p>
                                                                     <h6 class="mt-0">Mary Frye</h6>
@@ -179,7 +179,7 @@
                                                     <li class="message-list-item">
                                                         <a href="#">
                                                             <div class="media">
-                                                                <img class="mr-3 thumb-md rounded-circle" src="images/users/user-3.jpg" alt="">
+                                                                <img class="mr-3 thumb-md rounded-circle" src="{{asset('images/users/user-2.jpg')}}" alt="">
                                                                 <div class="media-body">
                                                                     <p class="float-right font-12 text-muted">11:42am</p>
                                                                     <h6 class="mt-0">David Smith</h6>
@@ -191,7 +191,7 @@
                                                     <li class="message-list-item">
                                                         <a href="#">
                                                             <div class="media">
-                                                                <img class="mr-3 thumb-md rounded-circle" src="images/users/user-4.jpg" alt="">
+                                                                <img class="mr-3 thumb-md rounded-circle" src="{{asset('images/users/user-4.jpg')}}" alt="">
                                                                 <div class="media-body">
                                                                     <p class="float-right font-12 text-muted">01:56pm</p>
                                                                     <h6 class="mt-0">Troy Long</h6>
@@ -212,7 +212,7 @@
                                                     <li class="message-list-item">
                                                         <a href="#">
                                                             <div class="media">
-                                                                <img class="mr-3 thumb-md rounded-circle" src="images/users/user-5.jpg" alt="">
+                                                                <img class="mr-3 thumb-md rounded-circle" src="{{asset('images/users/user-5.jpg')}}" alt="">
                                                                 <div class="media-body">
                                                                     <p class="float-right font-12 text-muted">09:42am</p>
                                                                     <h6 class="mt-0">John Carle</h6>
@@ -224,7 +224,7 @@
                                                     <li class="message-list-item">
                                                         <a href="#">
                                                             <div class="media">
-                                                                <img class="mr-3 thumb-md rounded-circle" src="images/users/user-6.jpg" alt="">
+                                                                <img class="mr-3 thumb-md rounded-circle" src="{{asset('images/users/user-6.jpg')}}" alt="">
                                                                 <div class="media-body">
                                                                     <p class="float-right font-12 text-muted">11:07am</p>
                                                                     <h6 class="mt-0">Jerry Carter</h6>
@@ -236,7 +236,7 @@
                                                     <li class="message-list-item">
                                                         <a href="#">
                                                             <div class="media">
-                                                                <img class="mr-3 thumb-md rounded-circle" src="images/users/user-7.jpg" alt="">
+                                                                <img class="mr-3 thumb-md rounded-circle" src="{{asset('images/users/user-7.jpg')}}" alt="">
                                                                 <div class="media-body">
                                                                     <p class="float-right font-12 text-muted">01:17pm</p>
                                                                     <h6 class="mt-0">Shane Hill</h6>
@@ -346,7 +346,7 @@
                                                             <label class="custom-control-label" for="customCheck1">Zegva Themes</label>
                                                         </div>
                                                     </td>
-                                                    <td> <img src="images/users/user-1.jpg" alt="" class="thumb-md rounded-circle mr-2"> Philip Smead</td>
+                                                    <td> <img src="{{asset('images/users/user-1.jpg')}}" alt="" class="thumb-md rounded-circle mr-2"> Philip Smead</td>
                                                     <td>April, 25</td>
                                                     <td><span class="badge badge-primary">High</span></td>
                                                 </tr>
@@ -361,7 +361,7 @@
                                                             <label class="custom-control-label" for="customCheck2"> Themesdesign</label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="images/users/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2"> Brent Shipley</td>
+                                                    <td><img src="{{asset('images/users/user-2.jpg')}}" alt="" class="thumb-md rounded-circle mr-2"> Brent Shipley</td>
                                                     <td>April, 28</td>
                                                     <td><span class="badge badge-danger">Low</span></td>
                                                 </tr>
@@ -376,7 +376,7 @@
                                                             <label class="custom-control-label" for="customCheck3">Zegva Themes</label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="images/users/user-3.jpg" alt="" class="thumb-md rounded-circle mr-2">Kevin Ashley</td>
+                                                    <td><img src="{{asset('images/users/user-3.jpg')}}" alt="" class="thumb-md rounded-circle mr-2">Kevin Ashley</td>
                                                     <td>June, 12</td>
                                                     <td><span class="badge badge-success">Medium</span></td>
                                                 </tr>
@@ -390,7 +390,7 @@
                                                             <label class="custom-control-label" for="customCheck4">Themesdesign</label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="images/users/user-4.jpg" alt="" class="thumb-md rounded-circle mr-2">Martin Whitmer</td>
+                                                    <td><img src="{{asset('images/users/user-4.jpg')}}" alt="" class="thumb-md rounded-circle mr-2">Martin Whitmer</td>
                                                     <td>June, 28</td>
                                                     <td><span class="badge badge-success">Medium</span></td>
                                                 </tr>
@@ -428,7 +428,7 @@
                                                             <label class="custom-control-label" for="customCheck5">Zegva Themes</label>
                                                         </div>
                                                     </td>
-                                                    <td> <img src="images/users/user-5.jpg" alt="" class="thumb-md rounded-circle mr-2"> Enrique Peters</td>
+                                                    <td> <img src="{{asset('images/users/user-5.jpg')}}" alt="" class="thumb-md rounded-circle mr-2"> Enrique Peters</td>
                                                     <td>July, 15</td>
                                                     <td><span class="badge badge-danger">Low</span></td>
                                                 </tr>
@@ -443,7 +443,7 @@
                                                             <label class="custom-control-label" for="customCheck6"> Themesdesign</label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="images/users/user-6.jpg" alt="" class="thumb-md rounded-circle mr-2"> Richard Schnell</td>
+                                                    <td><img src="{{asset('images/users/user-6.jpg')}}" alt="" class="thumb-md rounded-circle mr-2"> Richard Schnell</td>
                                                     <td>July, 30</td>
                                                     <td><span class="badge badge-primary">High</span></td>
                                                 </tr>
@@ -458,7 +458,7 @@
                                                             <label class="custom-control-label" for="customCheck7">Zegva Themes</label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="images/users/user-7.jpg" alt="" class="thumb-md rounded-circle mr-2">Dennis Jackson</td>
+                                                    <td><img src="{{asset('images/users/user-7.jpg')}}" alt="" class="thumb-md rounded-circle mr-2">Dennis Jackson</td>
                                                     <td>August, 08</td>
                                                     <td><span class="badge badge-success">Medium</span></td>
                                                 </tr>
@@ -473,7 +473,7 @@
                                                             <label class="custom-control-label" for="customCheck8">Zegva Themes</label>
                                                         </div>
                                                     </td>
-                                                    <td> <img src="images/users/user-8.jpg" alt="" class="thumb-md rounded-circle mr-2">Carlos Rodrigues</td>
+                                                    <td> <img src="{{asset('images/users/user-8.jpg')}}" alt="" class="thumb-md rounded-circle mr-2">Carlos Rodrigues</td>
                                                     <td>August, 23</td>
                                                     <td><span class="badge badge-danger">Low</span></td>
                                                 </tr>

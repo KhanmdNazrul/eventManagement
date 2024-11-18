@@ -8,18 +8,18 @@
     <title>Zegva - Responsive Admin & Dashboard Template | Themesdesign</title>
     <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
     <meta content="Themesdesign" name="author" />
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">
 
-    <link href="plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link href="plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="{{asset('plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css')}}" rel="stylesheet" type="text/css" media="screen">
 
     <!--Morris Chart CSS -->
-    <link rel="stylesheet" href="plugins/morris/morris.css">
+    <link rel="stylesheet" href="{{asset('plugins/morris/morris.css')}}">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/metismenu.min.css" rel="stylesheet" type="text/css">
-    <link href="css/icons.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/metismenu.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/icons.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -57,19 +57,19 @@
     <!-- END wrapper -->
 
     <!-- jQuery  -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/metismenu.min.js"></script>
-    <script src="js/jquery.slimscroll.js"></script>
-    <script src="js/waves.min.js"></script>
-    <script src="plugins/apexchart/apexcharts.min.js"></script>
-    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('js/metismenu.min.js')}}"></script>
+    <script src="{{asset('js/jquery.slimscroll.js')}}"></script>
+    <script src="{{asset('js/waves.min.js')}}"></script>
+    <script src="{{asset('plugins/apexchart/apexcharts.min.js')}}"></script>
+    <script src="{{asset('plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
     <!--Morris Chart-->
-    <script src="plugins/morris/morris.min.js"></script>
-    <script src="plugins/raphael/raphael.min.js"></script>
-    <script src="pages/dashboard.init.js"></script>
+    <script src="{{asset('plugins/morris/morris.min.js')}}"></script>
+    <script src="{{asset('plugins/raphael/raphael.min.js')}}"></script>
+    <script src="{{asset('pages/dashboard.init.js')}}"></script>
     <!-- App js -->
-    <script src="js/app.js"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 
 </body>
 </html>

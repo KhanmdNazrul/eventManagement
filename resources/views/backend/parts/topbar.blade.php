@@ -3,8 +3,8 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <a href="index.html" class="logo">
-                    <img src="images/logo-light.png" class="logo-lg" alt="" height="22">
-                    <img src="images/logo-sm.png" class="logo-sm" alt="" height="24">
+                    <img src="{{asset('images/logo-light.png')}}" class="logo-lg" alt="" height="22">
+                    <img src="{{asset('images/logo-sm.png')}}" class="logo-sm" alt="" height="24">
                 </a>
             </div>
 
@@ -30,14 +30,14 @@
                     <!-- language-->
                     <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
                         <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            <img src="images/flags/us_flag.jpg" class="mr-2" height="12" alt="" /> English <span class="mdi mdi-chevron-down"></span>
+                            <img src="{{asset('images/flags/us_flag.jpg')}}" class="mr-2" height="12" alt="" /> English <span class="mdi mdi-chevron-down"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated language-switch">
-                            <a class="dropdown-item" href="#"><img src="images/flags/french_flag.jpg" alt="" height="16" /><span> French </span></a>
-                            <a class="dropdown-item" href="#"><img src="images/flags/spain_flag.jpg" alt="" height="16" /><span> Spanish </span></a>
-                            <a class="dropdown-item" href="#"><img src="images/flags/russia_flag.jpg" alt="" height="16" /><span> Russian </span></a>
-                            <a class="dropdown-item" href="#"><img src="images/flags/germany_flag.jpg" alt="" height="16" /><span> German </span></a>
-                            <a class="dropdown-item" href="#"><img src="images/flags/italy_flag.jpg" alt="" height="16" /><span> Italian </span></a>
+                            <a class="dropdown-item" href="#"><img src="{{asset('images/flags/french_flag.jpg')}}" alt="" height="16" /><span> French </span></a>
+                            <a class="dropdown-item" href="#"><img src="{{asset('images/flags/spain_flag.jpg')}}" alt="" height="16" /><span> Spanish </span></a>
+                            <a class="dropdown-item" href="#"><img src="{{asset('images/flags/russia_flag.jpg')}}" alt="" height="16" /><span> Russian </span></a>
+                            <a class="dropdown-item" href="#"><img src="{{asset('images/flags/germany_flag.jpg')}}" alt="" height="16" /><span> German </span></a>
+                            <a class="dropdown-item" href="#"><img src="{{asset('images/flags/italy_flag.jpg')}}" alt="" height="16" /><span> Italian </span></a>
                         </div>
                     </li>
 
@@ -101,7 +101,7 @@
                     <li class="dropdown notification-list list-inline-item">
                         <div class="dropdown notification-list nav-pro-img">
                             <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="images/users/user-1.jpg" alt="user" class="rounded-circle">
+                                <img src="{{asset('images/users/user-1.jpg')}}" alt="user" class="rounded-circle">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
                                 <!-- item-->
