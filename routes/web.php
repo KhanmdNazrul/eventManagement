@@ -49,3 +49,23 @@ Route::middleware('auth:admin')->prefix('admin')->group( function () {
     Route::view('/dashboard','backend.admin.dashboard');
 
 });
+
+//attendee routing;
+
+Route::middleware('guest:attendee')->prefix('attendee')->group( function () {
+
+    Route::get('login', [App\Http\Controllers\Auth\Attendee\LoginController::class, 'create'])->name('attendee.login');
+    Route::post('login', [App\Http\Controllers\Auth\Attendee\LoginController::class, 'store']);
+
+    Route::get('register', [App\Http\Controllers\Auth\Attendee\RegisterController::class, 'create'])->name('attendee.register');
+    Route::post('register', [App\Http\Controllers\Auth\Attendee\RegisterController::class, 'store']);
+
+});
+
+Route::middleware('auth:attendee')->prefix('attendee')->group( function () {
+
+    Route::post('logout', [App\Http\Controllers\Auth\Attendee\LoginController::class, 'destroy'])->name('attendee.logout');
+
+    Route::view('/dashboard','backend.attendee.dashboard');
+
+});

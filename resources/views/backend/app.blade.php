@@ -29,11 +29,20 @@
     <div id="wrapper">
 
         <!-- Top Bar Start -->
-        @include('backend.parts.topbar')
+        @if (Auth()->guard('admin')->check())
+			 @include('backend.parts.topbar')
+			 @elseif (Auth()->guard('attendee')->check())
+			 @include('backend.parts.attendee_topbar')
+			 @endif
+
         <!-- Top Bar End -->
 
         <!-- ========== Left Sidebar Start ========== -->
-        @include('backend.parts.leftbar')
+        @if (Auth()->guard('admin')->check())
+			 @include('backend.parts.leftbar')
+			 @elseif (Auth()->guard('attendee')->check())
+			 @include('backend.parts.attendee_leftbar')
+			 @endif
         <!-- Left Sidebar End -->
 
         <!-- ============================================================== -->
