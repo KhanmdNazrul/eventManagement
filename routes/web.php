@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AttendeeController;
+use App\Http\Controllers\backend\CatagoryController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,7 +19,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('/backend/users', AttendeeController::class);
 
 //admin dashboard
 Route::get('/admin/dashboard', function () {
@@ -40,8 +40,8 @@ require __DIR__.'/auth.php';
 //admin routing;
 Route::middleware('guest:admin')->prefix('admin')->group( function () {
 
-    Route::get('login', [App\Http\Controllers\Auth\Admin\LoginController::class, 'create'])->name('admin.login');
-    Route::post('login', [App\Http\Controllers\Auth\Admin\LoginController::class, 'store']);
+    Route::get('login', [App\Http\Controllers\Auth\Admin\LoginController::class, 'login'])->name('admin.login');
+    Route::post('login', [App\Http\Controllers\Auth\Admin\LoginController::class, 'check_user']);
 
     Route::get('register', [App\Http\Controllers\Auth\Admin\RegisterController::class, 'create'])->name('admin.register');
     Route::post('register', [App\Http\Controllers\Auth\Admin\RegisterController::class, 'store']);
@@ -50,9 +50,11 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
 
-    Route::post('logout', [App\Http\Controllers\Auth\Admin\LoginController::class, 'destroy'])->name('admin.logout');
+    Route::post('logout', [App\Http\Controllers\Auth\Admin\LoginController::class, 'logout'])->name('admin.logout');
 
-    Route::view('/admin/dashboard','backend.admin_dashboard');
+    Route::view('/dashboard','backend.admin_dashboard');
+    //catagory route
+    Route::resource('/catagory',CatagoryController::class);
 
 });
 

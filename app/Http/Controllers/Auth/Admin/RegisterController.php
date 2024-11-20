@@ -14,7 +14,7 @@ class RegisterController extends Controller
 {
     public function create(): View
     {
-        return view('backend.register');
+        return view('login.register');
     }
 
     public function store(Request $request): RedirectResponse

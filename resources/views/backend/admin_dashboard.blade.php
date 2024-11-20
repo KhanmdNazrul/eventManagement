@@ -1,5 +1,41 @@
-@extends('backend.app')
+@extends('backend.parts.app')
 @section('content')
+
+@section('css')
+
+<link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">
+
+<link href="{{asset('plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
+<link href="{{asset('plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css')}}" rel="stylesheet" type="text/css" media="screen">
+
+<!--Morris Chart CSS -->
+<link rel="stylesheet" href="{{asset('plugins/morris/morris.css')}}">
+
+<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('css/metismenu.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('css/icons.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css">
+@endsection
+
+
+@section('js')
+
+ <!-- jQuery  -->
+ <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('js/metismenu.min.js')}}"></script>
+    <script src="{{asset('js/jquery.slimscroll.js')}}"></script>
+    <script src="{{asset('js/waves.min.js')}}"></script>
+    <script src="{{asset('plugins/apexchart/apexcharts.min.js')}}"></script>
+    <script src="{{asset('plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+    <!--Morris Chart-->
+    <script src="{{asset('plugins/morris/morris.min.js')}}"></script>
+    <script src="{{asset('plugins/raphael/raphael.min.js')}}"></script>
+    <script src="{{asset('pages/dashboard.init.js')}}"></script>
+    <!-- App js -->
+    <script src="{{asset('js/app.js')}}"></script>
+
+@endsection
 
 <div class="content">
     <div class="container-fluid">

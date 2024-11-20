@@ -9,15 +9,14 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Validation\ValidationException;
-
 class LoginController extends Controller
 {
-    public function create(): View
+    public function login(): View
     {
-        return view('backend.login');
+        return view('login.login');
     }
 
-    public function store(Request $request): RedirectResponse
+    public function check_user(Request $request): RedirectResponse
     {
         $request->validate([
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255'],
@@ -36,7 +35,7 @@ class LoginController extends Controller
         return redirect()->intended(RouteServiceProvider::ADMIN_DASHBOARD);
     }
 
-    public function destroy(Request $request): RedirectResponse
+    public function logout(Request $request): RedirectResponse
     {
         Auth::guard('admin')->logout();
 
@@ -47,3 +46,4 @@ class LoginController extends Controller
         return redirect('/admin/login');
     }
 }
+

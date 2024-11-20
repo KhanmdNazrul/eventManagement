@@ -14,7 +14,7 @@ class LoginController extends Controller
 {
     public function create(): View
     {
-        return view('backend.attendee_login');
+        return view('login.attendee_login');
     }
 
     public function store(Request $request): RedirectResponse

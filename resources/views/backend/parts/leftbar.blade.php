@@ -7,7 +7,7 @@
                     <ul class="metismenu" id="side-menu">
                         <li class="menu-title">Menu</li>
                         <li>
-                            <a href="{{route('dashboard')}}" class="waves-effect">
+                            <a href="{{url('/admin/dashboard')}}" class="waves-effect">
                                 <i class="dripicons-meter"></i><span class="badge badge-info badge-pill float-right">9+</span> <span> Dashboard </span>
                             </a>
                         </li>
@@ -23,14 +23,14 @@
                             <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users"></i><span> Attendee <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                             <ul class="submenu">
                                 <li><a href=""><i class="fa fa-angle-double-right"></i> Add New</a></li>
-                                <li><a href="{{route('users.index')}}"><i class="fa fa-angle-double-right"></i> Manage Attendee</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Manage Attendee</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-tags"></i><span> Catagories <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                             <ul class="submenu">
                                 <li><a href=""><i class="fa fa-angle-double-right"></i> Create New</a></li>
-                                <li><a href=""><i class="fa fa-angle-double-right"></i> Manage Catagories</a></li>
+                                <li><a href="{{route('catagory.index')}}"><i class="fa fa-angle-double-right"></i> Manage Catagories</a></li>
                             </ul>
                         </li>
 
