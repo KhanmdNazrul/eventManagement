@@ -20,9 +20,14 @@ Route::get('/', function () {
 });
 Route::resource('/backend/users', AttendeeController::class);
 
+//admin dashboard
+Route::get('/admin/dashboard', function () {
+    return view('backend.admin_dashboard');
+})->middleware(['auth:admin', 'verified'])->name('admin_dashboard');
+
 Route::get('/dashboard', function () {
-    return view('backend.admin.dashboard');
-})->middleware(['auth:admin', 'verified'])->name('dashboard');
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -31,6 +36,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
 //admin routing;
 Route::middleware('guest:admin')->prefix('admin')->group( function () {
 
@@ -46,7 +52,7 @@ Route::middleware('auth:admin')->prefix('admin')->group( function () {
 
     Route::post('logout', [App\Http\Controllers\Auth\Admin\LoginController::class, 'destroy'])->name('admin.logout');
 
-    Route::view('/dashboard','backend.admin.dashboard');
+    Route::view('/admin/dashboard','backend.admin_dashboard');
 
 });
 
@@ -59,13 +65,12 @@ Route::middleware('guest:attendee')->prefix('attendee')->group( function () {
 
     Route::get('register', [App\Http\Controllers\Auth\Attendee\RegisterController::class, 'create'])->name('attendee.register');
     Route::post('register', [App\Http\Controllers\Auth\Attendee\RegisterController::class, 'store']);
-
 });
 
 Route::middleware('auth:attendee')->prefix('attendee')->group( function () {
 
     Route::post('logout', [App\Http\Controllers\Auth\Attendee\LoginController::class, 'destroy'])->name('attendee.logout');
 
-    Route::view('/dashboard','backend.attendee.dashboard');
+    Route::view('/dashboard','backend.attendee_dashboard');
 
 });
