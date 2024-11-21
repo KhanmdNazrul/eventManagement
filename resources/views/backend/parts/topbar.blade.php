@@ -21,6 +21,8 @@
     <nav class="navbar-custom">
         <ul class="navbar-right list-inline float-right mb-0">
 
+
+
             <li class="list-inline-item dropdown notification-list d-none d-md-inline-block">
                 <a class="nav-link waves-effect toggle-search" href="#" data-target="#search-wrap">
                     <i class="fas fa-search noti-icon"></i>
@@ -80,7 +82,7 @@
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <div class="notify-icon bg-success"><i class="mdi mdi-message-text-outline"></i></div>
+                            <div class="notify-icon bgu-sccess"><i class="mdi mdi-message-text-outline"></i></div>
                             <p class="notify-details"><b>New Message received</b><span class="text-muted">You have 87 unread messages</span></p>
                         </a>
 
@@ -97,6 +99,10 @@
                     </a>
                 </div>
             </li>
+
+            <li class="list-inline-item dropdown notification-list d-none d-md-inline-block">
+    <span>{{Auth()->guard()->user()->name}}</span>
+</li>
 
             <li class="dropdown notification-list list-inline-item">
                 <div class="dropdown notification-list nav-pro-img">
