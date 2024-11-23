@@ -43,12 +43,14 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
     Route::get('login', [App\Http\Controllers\Auth\Admin\LoginController::class, 'login'])->name('admin.login');
     Route::post('login', [App\Http\Controllers\Auth\Admin\LoginController::class, 'check_user']);
 
-    Route::get('register', [App\Http\Controllers\Auth\Admin\RegisterController::class, 'create'])->name('admin.register');
-    Route::post('register', [App\Http\Controllers\Auth\Admin\RegisterController::class, 'store']);
+    // Route::get('register', [App\Http\Controllers\Auth\Admin\RegisterController::class, 'create'])->name('admin.register');
+    // Route::post('register', [App\Http\Controllers\Auth\Admin\RegisterController::class, 'store']);
+   
 
 });
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
+    Route::resource('/general_admin', App\Http\Controllers\Auth\Admin\RegisterController::class);
 
     Route::post('logout', [App\Http\Controllers\Auth\Admin\LoginController::class, 'logout'])->name('admin.logout');
 

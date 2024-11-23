@@ -15,8 +15,8 @@
                         <li>
                             <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-star"></i><span> Admin <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                             <ul class="submenu">
-                                <li><a href=""><i class="fa fa-angle-double-right"></i> <span>Add New</span></a></li>
-                                <li><a href=""> <i class="fa fa-angle-double-right"></i> Manage Admin</a></li>
+                                <li><a href="{{route('general_admin.create')}}"><i class="fa fa-angle-double-right"></i> <span>Add New</span></a></li>
+                                <li><a href="{{route('general_admin.index')}}"> <i class="fa fa-angle-double-right"></i> Manage Admin</a></li>
                             </ul>
                         </li>
                         <li>
@@ -29,7 +29,7 @@
                         <li>
                             <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-tags"></i><span> Catagories <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                             <ul class="submenu">
-                                <li><a href=""><i class="fa fa-angle-double-right"></i> Create New</a></li>
+                                <li><a href="{{route('catagory.create')}}"><i class="fa fa-angle-double-right"></i> Create New</a></li>
                                 <li><a href="{{route('catagory.index')}}"><i class="fa fa-angle-double-right"></i> Manage Catagories</a></li>
                             </ul>
                         </li>

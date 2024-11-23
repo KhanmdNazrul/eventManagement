@@ -48,15 +48,15 @@
             <div class="row align-items-center ">
                 <div class="col-md-8">
                     <div class="page-title-box">
-                        <h4 class="page-title">Catagory</h4>
+                        <h4 class="page-title">Responsive Table</h4>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="javascript:void(0);">Single</a>
+                                <a href="javascript:void(0);">Zegva</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="javascript:void(0);">Show</a>
+                                <a href="javascript:void(0);">Tables</a>
                             </li>
-
+                            <li class="breadcrumb-item active">Responsive Table</li>
                         </ol>
 
 
@@ -81,22 +81,29 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="mt-0 header-title">Catagory Show</h4>
-                        <p class="sub-title">Here are the single catagory of our Events. </p>
+                        <h4 class="mt-0 header-title">Catagory List</h4>
+                        <p class="sub-title">Here are the catagories of our Events. </p>
 
-                       
-                                <table>
-                                   <tr>
-                                            <h2> Catagory Name: {{$catagory->name}}</h2>
-                                            <h4>Catagory ID: {{$catagory->id}}</h4>
-
-                                            <p>Details: {{$catagory->details}}</p>
-
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive b-0" data-pattern="priority-columns">
+                                <table id="tech-companies-1" class="table  table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>SN</th>
+                                            <th data-priority="1">Name</th>
+                                            <th data-priority="3">Details</th>
+                                            <th data-priority="1" style="width:230px">Action</th>
                                         </tr>
+                                    </thead>
+                                    <tbody>
+                                       
 
-                                    
+                                      
+                                    </tbody>
                                 </table>
-                          
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>

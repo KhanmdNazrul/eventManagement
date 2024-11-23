@@ -23,7 +23,7 @@ class CatagoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.catagories.create');
     }
 
     /**
@@ -31,7 +31,19 @@ class CatagoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'details' => 'required',
+        ]);
+
+        $catagory =  new Catagory;
+
+        $catagory->name = $request->name;
+        $catagory->details = $request->details;
+        $catagory->save();
+
+
+      return redirect()->route('catagory.index')->with('msg', 'Created Successfully');
     }
 
     /**
@@ -39,7 +51,7 @@ class CatagoryController extends Controller
      */
     public function show(Catagory $catagory)
     {
-        //
+        return view('backend.catagories.show',compact('catagory'));
     }
 
     /**
@@ -47,7 +59,8 @@ class CatagoryController extends Controller
      */
     public function edit(Catagory $catagory)
     {
-        //
+        return view('backend.catagories.edit',compact('catagory'));
+       
     }
 
     /**
@@ -55,7 +68,15 @@ class CatagoryController extends Controller
      */
     public function update(Request $request, Catagory $catagory)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'details' => 'required',
+        ]);
+        $catagory->name = $request->name;
+        $catagory->details = $request->details;
+        $catagory->update();
+
+        return redirect()->route('catagory.index')->with('msg', 'Updated Successfully');
     }
 
     /**
@@ -63,6 +84,8 @@ class CatagoryController extends Controller
      */
     public function destroy(Catagory $catagory)
     {
-        //
+    $catagory->delete();
+        
+       return redirect()->route('catagory.index')->with('msg', 'Deleted Successfully');
     }
 }

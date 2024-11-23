@@ -48,7 +48,7 @@
         <div class="row align-items-center ">
             <div class="col-md-8">
                 <div class="page-title-box">
-                    <h4 class="page-title">Caragory Update Form</h4>
+                    <h4 class="page-title">New Admin registration Form</h4>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="javascript:void(0);">Eventee</a>
@@ -56,7 +56,7 @@
                         <li class="breadcrumb-item">
                             <a href="javascript:void(0);">Form</a>
                         </li>
-                        <li class="breadcrumb-item active">Catagory Update Form</li>
+                        <li class="breadcrumb-item active">Admin Registration Form</li>
                     </ol>
                 </div>
             </div>
@@ -76,27 +76,54 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="mt-0 header-title">Update Catagory</h4>
+                                    <h4 class="mt-0 header-title">Admin Registration Form</h4>
                                     
-                                    <form action="{{route('catagory.update', $catagory->id)}}" method="post">
+                                    <form action="{{route('general_admin.store')}}" method="post" enctype="multipart/form-data">
                                         @csrf
-                                        @method('PUT')
                                         <div class="form-group">
                                             <label>Name</label>
-                                            <input type="text" name="name" class="form-control" value="{{$catagory->name}}" required placeholder="Enter Catagory Name" />
+                                            <input type="text" name="name" class="form-control" required placeholder="Enter Your Name" />
                                         </div>
-                                     
                                      
                                         <div class="form-group">
-                                            <label>Details</label>
+                                            <label>Phone</label>
+                                            <input type="text" name="name" class="form-control" required placeholder="Enter Phone Number" />
+                                        </div>
+                                     
+                                        <div class="form-group">
+                                            <label>Address</label>
                                             <div>
-                                                <textarea name="details" required class="form-control" rows="10" placeholder="Catagory Details">{{$catagory->details}}</textarea>
+                                                <textarea name="details" required class="form-control" rows="5" placeholder="Eneter your Current Address"></textarea>
                                             </div>
                                         </div>
+
+                                        <div class="form-group">
+                                            <label>Image</label>
+                                            <div>
+                                            <input name="image" type="file" class="form-control"  placeholder="upload your image" />
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" name="email" class="form-control" required placeholder="Enter Your Email" />
+                                        </div>
+                                     
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" name="password" class="form-control" required placeholder="Enter Password" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Confirm Password</label>
+                                            <input type="password" name="password_confirmation" class="form-control" required placeholder="Re-Enter password" />
+                                        </div>
+                                     
+
                                         <div class="form-group mb-0">
                                             <div>
                                                 <button type="submit" class="btn btn-primary waves-effect waves-light">
-                                                    Update
+                                                    Submit
                                                 </button>
                                                 <button type="reset" class="btn btn-secondary waves-effect m-l-5">
                                                     Cancel
