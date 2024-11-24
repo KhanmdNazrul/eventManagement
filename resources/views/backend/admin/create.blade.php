@@ -87,13 +87,13 @@
                                      
                                         <div class="form-group">
                                             <label>Phone</label>
-                                            <input type="text" name="name" class="form-control" required placeholder="Enter Phone Number" />
+                                            <input type="text" name="phone" class="form-control" required placeholder="Enter Phone Number" />
                                         </div>
                                      
                                         <div class="form-group">
                                             <label>Address</label>
                                             <div>
-                                                <textarea name="details" required class="form-control" rows="5" placeholder="Eneter your Current Address"></textarea>
+                                                <textarea name="address" required class="form-control" rows="5" placeholder="Eneter your Current Address"></textarea>
                                             </div>
                                         </div>
 

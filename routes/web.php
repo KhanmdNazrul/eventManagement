@@ -50,6 +50,7 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 });
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
+    
     Route::resource('/general_admin', App\Http\Controllers\Auth\Admin\RegisterController::class);
 
     Route::post('logout', [App\Http\Controllers\Auth\Admin\LoginController::class, 'logout'])->name('admin.logout');

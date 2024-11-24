@@ -26,23 +26,21 @@ class RegisterController extends Controller
         return view('backend.admin.create');
     }
 
-    public function store(Request $request) //: RedirectResponse
+    public function store(Request $request) 
     {
        
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'phone' => ['required'],
             'address' => ['required'],
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => ['required'],  //['image|mimes:jpeg,png,jpg,gif,svg|max:2048'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . Admin::class],
             'password' => ['required', 'confirmed', 'min:8'],
         ]);
 
         $input = $request->all();
        
-
-
-        $input['password'] = Hash::make();
+        $input['password'] = Hash::make('password');
 
         $image = $request->file('image');
             $destinationPath = 'images/';
