@@ -91,14 +91,38 @@
                                         <tr>
                                             <th>SN</th>
                                             <th data-priority="1">Name</th>
-                                            <th data-priority="3">Details</th>
+                                            <th data-priority="1">Phone</th>
+                                            <th data-priority="1">Address</th>
+                                            <th data-priority="1">Photo</th>
+                                            <th data-priority="1">email</th>
                                             <th data-priority="1" style="width:230px">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                       
+                                        @foreach ($items as $item)
 
-                                      
+                                        <tr>
+                                            <td>{{$loop->iteration}}</td>
+                                            <td>{{$item->name}}</td>
+                                            <td>{{$item->phone}}</td>
+                                            <td>{{$item->address}}</td>
+                                            <td>{{$item->image}}</td>
+                                            <td>{{$item->email}}</td>
+                                            <td>
+
+                                                <form action="{{route('general_admin.destroy', $item->id)}}" method="post">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <a href="{{route('general_admin.show',$item->id)}}" class="btn btn-info">show</a>
+                                                    <a href="{{route('general_admin.edit',$item->id)}}" class="btn btn-success">Edit</a>
+
+                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                </form>
+
+                                            </td>
+                                        </tr>
+                                        @endforeach
+
                                     </tbody>
                                 </table>
                             </div>
