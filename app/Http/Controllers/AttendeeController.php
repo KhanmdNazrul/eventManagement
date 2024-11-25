@@ -79,9 +79,6 @@ class AttendeeController extends Controller
         ]);
   
         $input = $request->all();
-  
-       
-          
         $attendee->update($input);
   
         return redirect()->route('backend.users.index')->with('success','Information Update Successfully');

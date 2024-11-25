@@ -81,7 +81,7 @@ class RegisterController extends Controller
 
         $input = $request->all();
        
-        $input['password'] = Hash::make('password');
+        $input['password'] = bcrypt('password');
 
         $image = $request->file('image');
             $destinationPath = 'images/';

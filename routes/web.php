@@ -51,8 +51,8 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
     
-    Route::resource('/general_admin', App\Http\Controllers\Auth\Admin\RegisterController::class);
-
+    // Route::resource('/general_admin', App\Http\Controllers\Auth\Admin\RegisterController::class);
+    Route::resource('/general_admin', App\Http\Controllers\backend\AdminController::class);
     Route::post('logout', [App\Http\Controllers\Auth\Admin\LoginController::class, 'logout'])->name('admin.logout');
 
     Route::view('/dashboard','backend.admin_dashboard');
