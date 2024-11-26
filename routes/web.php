@@ -50,7 +50,9 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 });
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
-    
+    Route::resource('/events/city', App\Http\Controllers\backend\CityController::class);
+
+    Route::resource('/events/country', App\Http\Controllers\backend\CountryController::class);
     // Route::resource('/general_admin', App\Http\Controllers\Auth\Admin\RegisterController::class);
     Route::resource('/general_admin', App\Http\Controllers\backend\AdminController::class);
     Route::post('logout', [App\Http\Controllers\Auth\Admin\LoginController::class, 'logout'])->name('admin.logout');

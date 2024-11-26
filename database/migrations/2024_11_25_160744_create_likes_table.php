@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('likes', function (Blueprint $table) {
             $table->id();
+            $table->integer('attendee_id');
+            $table->integer('event_id');
             $table->timestamps();
         });
     }

@@ -48,7 +48,7 @@
         <div class="row align-items-center ">
             <div class="col-md-8">
                 <div class="page-title-box">
-                    <h4 class="page-title">Admin Updation Form</h4>
+                    <h4 class="page-title">City Added Form</h4>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="javascript:void(0);">Eventee</a>
@@ -56,7 +56,7 @@
                         <li class="breadcrumb-item">
                             <a href="javascript:void(0);">Form</a>
                         </li>
-                        <li class="breadcrumb-item active">Admin Updation Form</li>
+                        <li class="breadcrumb-item active">City Added Form</li>
                     </ol>
                 </div>
             </div>
@@ -76,76 +76,32 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="mt-0 header-title">Admin Updation Form</h4>
+                                    <h4 class="mt-0 header-title">Add City Name</h4>
                                     
-                                    <form action="{{route('general_admin.update', $admin->id)}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{route('city.store')}}" method="post">
                                         @csrf
-                                        @method('PUT')
                                         <div class="form-group">
                                             <label>Name</label>
-                                            <input type="text" name="name" value="{{old('name')??$admin->name}}" class="form-control" required placeholder="Enter Your Name" />
-                                            @error('name')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
+                                            <input type="text" name="name" class="form-control" required placeholder="Enter City Name" />
                                         </div>
                                      
-                                        <div class="form-group">
-                                            <label>Phone</label>
-                                            <input type="text" name="phone" value="{{old('phone')??$admin->phone}}" class="form-control" required placeholder="Enter Phone Number" />
-                                            @error('phone')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
                                      
                                         <div class="form-group">
-                                            <label>Address</label>
+                                            <label>Details</label>
                                             <div>
-                                                <textarea name="address" required class="form-control" rows="5" placeholder="Eneter your Current Address">{{old('address')??$admin->address}}</textarea>
+                                            <select name="country" id="" class="form-control">
+													<option value="">Select One</option>
+													@foreach ($countries as $country)
+													<option value="{{$country->id}}" @selected(old('country')==$country->id)>{{$country->name}}</option>
+													@endforeach
+												</select>
+
                                             </div>
-                                            @error('address')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
                                         </div>
-
-                                        <div class="form-group">
-                                            <label>Image</label>
-                                            <div>
-                                            <input name="photo" type="file" value="{{old('photo')??$admin->photo}}" class="form-control"  placeholder="upload your image" />
-                                            </div>
-                                            @error('photo')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-                                       
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" name="email" value="{{old('email')??$admin->email}}" class="form-control" required placeholder="Enter Your Email" />
-                                            @error('email')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-                                     
-                                        <div class="form-group">
-                                            <label>Password</label>
-                                            <input type="password" name="password" value="{{$admin->password}}" class="form-control" required placeholder="Enter Password" />
-                                        
-                                            @error('password')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror</div>
-
-                                        <div class="form-group">
-                                            <label>Confirm Password</label>
-                                            <input type="password" name="password_confirmation" value="{{$admin->password}}" class="form-control" required placeholder="Re-Enter password" />
-                                            @error('password_confirmation')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-                                     
-
                                         <div class="form-group mb-0">
                                             <div>
                                                 <button type="submit" class="btn btn-primary waves-effect waves-light">
-                                                    Update
+                                                    Submit
                                                 </button>
                                                 <button type="reset" class="btn btn-secondary waves-effect m-l-5">
                                                     Cancel

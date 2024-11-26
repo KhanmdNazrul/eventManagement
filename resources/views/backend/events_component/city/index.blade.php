@@ -81,36 +81,36 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="mt-0 header-title">Catagory List</h4>
-                        <p class="sub-title">Here are the catagories of our Events. </p>
+                        <h4 class="mt-0 header-title">City Name List</h4>
+                        <p class="sub-title">Here are the cities of our Possible Events. </p>
 
                         <div class="table-rep-plugin">
                             <div class="table-responsive b-0" data-pattern="priority-columns">
-                            <div class="float-right"><a href="{{route('catagory.create')}}"><button class="btn btn-success">Add New</button></a></div>
+                            <div class="float-right"><a href="{{route('city.create')}}"><button class="btn btn-success">Add New</button></a></div>
 
                                 <table id="tech-companies-1" class="table  table-striped">
                                     <thead>
                                         <tr>
                                             <th>SN</th>
                                             <th data-priority="1">Name</th>
-                                            <th data-priority="3">Details</th>
+                                            <th data-priority="3">Country</th>
                                             <th data-priority="1" style="width:230px">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($items as $item)
+                                        @foreach($cities as $city)
 
                                         <tr>
                                             <th>{{$loop->iteration}}</th>
-                                            <td>{{$item->name}}</td>
-                                            <td>{{$item->details}}</td>
+                                            <td>{{$city->name}}</td>
+                                            <td>{{$city->country->name}}</td>
                                             <td>
 
-                                                <form action="{{route('catagory.destroy', $item->id)}}" method="post">
+                                                <form action="{{route('city.destroy', $city->id)}}" method="post">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <a href="{{route('catagory.show',$item->id)}}" class="btn btn-info">show</a>
-                                                    <a href="{{route('catagory.edit',$item->id)}}" class="btn btn-success">Edit</a>
+                                                    
+                                                    <a href="{{route('city.edit', $city->id)}}" class="btn btn-success">Edit</a>
 
                                                     <button type="submit" class="btn btn-danger">Delete</button>
                                                 </form>

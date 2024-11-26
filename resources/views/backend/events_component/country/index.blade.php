@@ -48,10 +48,10 @@
             <div class="row align-items-center ">
                 <div class="col-md-8">
                     <div class="page-title-box">
-                        <h4 class="page-title">Responsive Table</h4>
+                        <h4 class="page-title">Eventee Table</h4>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="javascript:void(0);">Zegva</a>
+                                <a href="javascript:void(0);">Eventee</a>
                             </li>
                             <li class="breadcrumb-item">
                                 <a href="javascript:void(0);">Tables</a>
@@ -81,36 +81,33 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="mt-0 header-title">Catagory List</h4>
-                        <p class="sub-title">Here are the catagories of our Events. </p>
+                        <h4 class="mt-0 header-title">Country List</h4>
+                        <p class="sub-title">Here are the Countries where our Events are available </p>
 
                         <div class="table-rep-plugin">
                             <div class="table-responsive b-0" data-pattern="priority-columns">
-                            <div class="float-right"><a href="{{route('catagory.create')}}"><button class="btn btn-success">Add New</button></a></div>
-
+                                <div class="float-right"><a href="{{route('country.create')}}"><button class="btn btn-success">Add New</button></a></div>
                                 <table id="tech-companies-1" class="table  table-striped">
                                     <thead>
                                         <tr>
                                             <th>SN</th>
                                             <th data-priority="1">Name</th>
-                                            <th data-priority="3">Details</th>
+                                          
                                             <th data-priority="1" style="width:230px">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($items as $item)
+                                        @foreach($countries as $country)
 
                                         <tr>
                                             <th>{{$loop->iteration}}</th>
-                                            <td>{{$item->name}}</td>
-                                            <td>{{$item->details}}</td>
+                                            <td>{{$country->name}}</td>
                                             <td>
 
-                                                <form action="{{route('catagory.destroy', $item->id)}}" method="post">
+                                                <form action="{{route('country.destroy', $country->id)}}" method="post">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <a href="{{route('catagory.show',$item->id)}}" class="btn btn-info">show</a>
-                                                    <a href="{{route('catagory.edit',$item->id)}}" class="btn btn-success">Edit</a>
+                                                    <a href="{{route('country.edit',$country->id)}}" class="btn btn-success">Edit</a>
 
                                                     <button type="submit" class="btn btn-danger">Delete</button>
                                                 </form>

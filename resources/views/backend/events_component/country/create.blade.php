@@ -48,7 +48,7 @@
         <div class="row align-items-center ">
             <div class="col-md-8">
                 <div class="page-title-box">
-                    <h4 class="page-title">New Admin registration Form</h4>
+                    <h4 class="page-title">Country Added Form</h4>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="javascript:void(0);">Eventee</a>
@@ -56,7 +56,7 @@
                         <li class="breadcrumb-item">
                             <a href="javascript:void(0);">Form</a>
                         </li>
-                        <li class="breadcrumb-item active">Admin Registration Form</li>
+                        <li class="breadcrumb-item active">Country Added Form</li>
                     </ol>
                 </div>
             </div>
@@ -76,71 +76,15 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="mt-0 header-title">Admin Registration Form</h4>
+                                    <h4 class="mt-0 header-title">Add Country</h4>
                                     
-                                    <form action="{{route('general_admin.store')}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{route('country.store')}}" method="post">
                                         @csrf
                                         <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text" name="name" class="form-control" required placeholder="Enter Your Name" />
-                                            @error('name')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
+                                            <label>Country Name</label>
+                                            <input type="text" name="name" class="form-control" required placeholder="Enter Country Name" />
                                         </div>
                                      
-                                        <div class="form-group">
-                                            <label>Phone</label>
-                                            <input type="text" name="phone" class="form-control" required placeholder="Enter Phone Number" />
-                                            @error('phone')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-                                     
-                                        <div class="form-group">
-                                            <label>Address</label>
-                                            <div>
-                                                <textarea name="address" required class="form-control" rows="5" placeholder="Eneter your Current Address"></textarea>
-                                            </div>
-                                            @error('address')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Image</label>
-                                            <div>
-                                            <input name="photo" type="file" class="form-control"  placeholder="upload your image" />
-                                            </div>
-                                            @error('photo')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-                                       
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" name="email" class="form-control" required placeholder="Enter Your Email" />
-                                            @error('email')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-                                     
-                                        <div class="form-group">
-                                            <label>Password</label>
-                                            <input type="password" name="password" class="form-control" required placeholder="Enter Password" />
-                                        
-                                            @error('password')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror</div>
-
-                                        <div class="form-group">
-                                            <label>Confirm Password</label>
-                                            <input type="password" name="password_confirmation" class="form-control" required placeholder="Re-Enter password" />
-                                            @error('password_confirmations')
-												<div class="alert alert-danger">{{$message}}</div>
-												@enderror
-                                        </div>
-                                     
-
                                         <div class="form-group mb-0">
                                             <div>
                                                 <button type="submit" class="btn btn-primary waves-effect waves-light">

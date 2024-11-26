@@ -48,15 +48,15 @@
             <div class="row align-items-center ">
                 <div class="col-md-8">
                     <div class="page-title-box">
-                        <h4 class="page-title">Responsive Table</h4>
+                        <h4 class="page-title">Catagory</h4>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="javascript:void(0);">Zegva</a>
+                                <a href="javascript:void(0);">Single</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="javascript:void(0);">Tables</a>
+                                <a href="javascript:void(0);">Show</a>
                             </li>
-                            <li class="breadcrumb-item active">Responsive Table</li>
+
                         </ol>
 
 
@@ -81,48 +81,22 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="mt-0 header-title">Catagory List</h4>
-                        <p class="sub-title">Here are the catagories of our Events. </p>
+                        <h4 class="mt-0 header-title">Catagory Show</h4>
+                        <p class="sub-title">Here are the single catagory of our Events. </p>
 
-                        <div class="table-rep-plugin">
-                            <div class="table-responsive b-0" data-pattern="priority-columns">
-                            <div class="float-right"><a href="{{route('catagory.create')}}"><button class="btn btn-success">Add New</button></a></div>
+                       
+                                <table>
+                                   <tr>
+                                            <h2> Catagory Name: {{$catagory->name}}</h2>
+                                            <h4>Catagory ID: {{$catagory->id}}</h4>
 
-                                <table id="tech-companies-1" class="table  table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>SN</th>
-                                            <th data-priority="1">Name</th>
-                                            <th data-priority="3">Details</th>
-                                            <th data-priority="1" style="width:230px">Action</th>
+                                            <p>Details: {{$catagory->details}}</p>
+
                                         </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach($items as $item)
 
-                                        <tr>
-                                            <th>{{$loop->iteration}}</th>
-                                            <td>{{$item->name}}</td>
-                                            <td>{{$item->details}}</td>
-                                            <td>
-
-                                                <form action="{{route('catagory.destroy', $item->id)}}" method="post">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <a href="{{route('catagory.show',$item->id)}}" class="btn btn-info">show</a>
-                                                    <a href="{{route('catagory.edit',$item->id)}}" class="btn btn-success">Edit</a>
-
-                                                    <button type="submit" class="btn btn-danger">Delete</button>
-                                                </form>
-
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
+                                    
                                 </table>
-                            </div>
-
-                        </div>
+                          
 
                     </div>
                 </div>

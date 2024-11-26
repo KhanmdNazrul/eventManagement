@@ -81,8 +81,8 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="mt-0 header-title">Catagory List</h4>
-                        <p class="sub-title">Here are the catagories of our Events. </p>
+                        <h4 class="mt-0 header-title">Admin Lists</h4>
+                        <p class="sub-title">Here are the Admins of our system. </p>
 
                         <div class="table-rep-plugin">
                             <div class="table-responsive b-0" data-pattern="priority-columns">
@@ -113,8 +113,8 @@
                                                 <form action="{{route('general_admin.destroy', $item->id)}}" method="post">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <a href="{{route('general_admin.show',$item->id)}}" class="btn btn-info">show</a>
-                                                    <a href="{{route('general_admin.edit',$item->id)}}" class="btn btn-success">Edit</a>
+                                                    <a href="{{route('general_admin.show', $item->id)}}" class="btn btn-info">show</a>
+                                                    <a href="{{route('general_admin.edit', $item->id)}}" class="btn btn-success">Edit</a>
 
                                                     <button type="submit" class="btn btn-danger">Delete</button>
                                                 </form>
