@@ -22,8 +22,8 @@
                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users"></i><span> Attendee <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Add New</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Manage Attendee</a></li>
+                        <li><a href="{{route('attendee.create')}}"><i class="fa fa-angle-double-right"></i> Add New</a></li>
+                        <li><a href="{{route('attendee.index')}}"><i class="fa fa-angle-double-right"></i> Manage Attendee</a></li>
                     </ul>
                 </li>
 
