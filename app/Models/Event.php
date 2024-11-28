@@ -17,10 +17,26 @@ class Event extends Model
         'image',
         'address',
         'num_tickets',
-        'attendee_id',
         'speaker_id',
         'organiser_id',
         'country_id',
         'city_id'
     ];
+
+    public function speaker(){
+        return $this->belongsTo(Speaker::class);
+    }
+
+    public function organiser(){
+        return $this->belongsTo(Organiser::class);
+    }
+
+    public function country(){
+        return $this->belongsTo(Country::class);
+    }
+
+    public function city(){
+        return $this->belongsTo(City::class);
+    }
+    
 }

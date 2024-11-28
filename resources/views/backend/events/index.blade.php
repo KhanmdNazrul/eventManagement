@@ -99,7 +99,6 @@
                                             <th data-priority="3">Photo</th>
                                             <th data-priority="3">Address</th>
                                             <th data-priority="2">Num of Tickets</th>
-                                            <th data-priority="2">Attendee</th>
                                             <th data-priority="1">Speaker</th>
                                             <th data-priority="2">Organiser</th>
                                             <th data-priority="3">Country</th>
@@ -116,11 +115,10 @@
                                             <td>{{$event->description}}</td>
                                             <td>{{$event->start_date}}</td>
                                             <td>{{$event->end_date}}</td>
-                                            <td>{{$event->start-time}}</td>
+                                            <td>{{$event->start_time}}</td>
                                             <td><img src="{{asset($event->image)}}" width="100px" alt=""></td>
                                             <td>{{$event->address}}</td>
                                             <td>{{$event->num_tickets}}</td>
-                                            <td>{{$event->attendee->name}}</td>
                                             <td>{{$event->speaker->name}}</td>
                                             <td>{{$event->organiser->name}}</td>
                                             <td>{{$event->country->name}}</td>

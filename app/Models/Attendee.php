@@ -31,8 +31,6 @@ class Attendee extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function event(){
-        return $this->hasMany(Event::class);
-    }
+    
 };
 

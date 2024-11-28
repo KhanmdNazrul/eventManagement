@@ -90,6 +90,15 @@
                         <li><a href=""><i class="fa fa-angle-double-right"></i> Cancel Booking</a></li>
                     </ul>
                 </li>
+
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-file-invoice-dollar"></i><span> payments <span class="float-right menu-arrow"></a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-file text-aqua"></i><span> Reports <span class="float-right menu-arrow"></a>
+                </li>
+
                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-newspaper"></i><span> News <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">

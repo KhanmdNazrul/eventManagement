@@ -82,7 +82,7 @@
                             @csrf
                             <div class="form-group">
                                 <label>Title</label>
-                                <input type="text" name="name" class="form-control" required placeholder="Enter Event Title" />
+                                <input type="text" name="title" class="form-control" required placeholder="Enter Event Title" />
                             </div>
 
                             <div class="form-group">
@@ -100,7 +100,7 @@
 
                             <div class="form-group">
                                 <label>Start Time</label>
-                                <input type="time" name="start_time" class="form-control" required placeholder="Enter Description" />
+                                <input type="time" name="start_time" class="form-control" />
                             </div>
 
                             <div class="form-group">
@@ -112,7 +112,7 @@
                             <div class="form-group">
                                 <label>Address</label>
                                 <div>
-                                    <textarea name="Address" required class="form-control" rows="5" placeholder="Event Location"></textarea>
+                                    <textarea name="address" required class="form-control" rows="5" placeholder="Event Location"></textarea>
                                 </div>
                             </div>
 
