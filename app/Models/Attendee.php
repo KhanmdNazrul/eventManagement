@@ -30,5 +30,9 @@ class Attendee extends Authenticatable
     protected $casts = [
         'password' => 'hashed',
     ];
+
+    public function event(){
+        return $this->hasMany(Event::class);
+    }
 };
 

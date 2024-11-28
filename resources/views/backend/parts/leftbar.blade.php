@@ -37,18 +37,26 @@
 
 
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user-plus"></i><span> Sponsors <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user-plus"></i><span> Organisers <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Add New</a></li>
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Manage Sponsor</a></li>
+                        <li><a href="{{route('organiser.create')}}"><i class="fa fa-angle-double-right"></i> Add New</a></li>
+                        <li><a href="{{route('organiser.index')}}"><i class="fa fa-angle-double-right"></i> Manage Organisers</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-bookmark"></i><span> Events <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Add New Event</a></li>
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Manage Events</a></li>
+                        <li><a href="{{route('event.create')}}"><i class="fa fa-angle-double-right"></i> Add New Event</a></li>
+                        <li><a href="{{route('event.index')}}"><i class="fa fa-angle-double-right"></i> Manage Events</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-odnoklassniki"></i><span> Speakers <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <ul class="submenu">
+                        <li><a href="{{route('speaker.create')}}"><i class="fa fa-angle-double-right"></i> Add New Speaker</a></li>
+                        <li><a href="{{route('speaker.index')}}"><i class="fa fa-angle-double-right"></i> Manage Speakers</a></li>
                     </ul>
                 </li>
 

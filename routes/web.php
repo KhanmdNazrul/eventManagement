@@ -50,9 +50,11 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 });
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
+    Route::resource('/event', App\Http\Controllers\backend\EventController::class);
+    Route::resource('/speaker', App\Http\Controllers\backend\SpeakerController::class);
+    Route::resource('/organiser', App\Http\Controllers\backend\OrganiserController::class);
     Route::resource('/events/city', App\Http\Controllers\backend\CityController::class);
     Route::resource('/attendee', App\Http\Controllers\backend\AttendeeController::class);
-
     Route::resource('/events/country', App\Http\Controllers\backend\CountryController::class);
     // Route::resource('/general_admin', App\Http\Controllers\Auth\Admin\RegisterController::class);
     Route::resource('/general_admin', App\Http\Controllers\backend\AdminController::class);
