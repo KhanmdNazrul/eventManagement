@@ -122,6 +122,18 @@
                             </div>
 
                             <div class="form-group">
+                                <label>Category</label>
+                                <div>
+                                    <select name="catagory" id="" class="form-control">
+                                        <option value="">Select One</option>
+                                        @foreach ($catagories as $catagory)
+                                        <option value="{{$catagory->id}}" @selected(old('catagory')==$catagory->id)>{{$catagory->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
                                 <label>Speaker</label>
                                 <div>
                                     <select name="speaker" id="" class="form-control">

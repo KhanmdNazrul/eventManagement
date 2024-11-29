@@ -48,7 +48,7 @@
         <div class="row align-items-center ">
             <div class="col-md-8">
                 <div class="page-title-box">
-                    <h4 class="page-title">Speaker's info. Update Form</h4>
+                    <h4 class="page-title">Event info. Update Form</h4>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="javascript:void(0);">Eventee</a>
@@ -76,45 +76,128 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="mt-0 header-title">Update Speaker Info.</h4>
+                                    <h4 class="mt-0 header-title">Update Event Info.</h4>
                                     
-                                    <form action="{{route('speaker.update', $speaker->id)}}" method="post" enctype="multipart/form-data">
-                                        @csrf
-                                        @method('PUT')
-                                        <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text" name="name" value="{{$speaker->name}}" class="form-control" required placeholder="Enter Speaker Name" />
-                                        </div>
+                                    <form action="{{route('event.update', $event->id)}}" method="post" enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
+                            <div class="form-group">
+                                <label>Title</label>
+                                <input type="text" name="title" value="{{$event->title}}" class="form-control" required placeholder="Enter Event Title" />
+                            </div>
 
-                                        <div class="form-group">
-                                            <label>Specialized</label>
-                                            <input type="text" name="profession"  value="{{$speaker->profession}}" class="form-control" required placeholder="Enter Expert field" />
-                                        </div>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <input type="text" value="{{$event->description}}" name="description" class="form-control" required placeholder="Enter Description" />
+                            </div>
+                            <div class="form-group">
+                                <label>Start Date</label>
+                                <input type="date" name="start_date" value="{{$event->start_date}}" class="form-control" required placeholder="Enter Description" />
+                            </div>
+                            <div class="form-group">
+                                <label>End Date</label>
+                                <input type="date" name="end_date"  value="{{$event->end_date}}" class="form-control" required placeholder="Enter Description" />
+                            </div>
 
-                                        <div class="form-group">
-                                            <label>Photo</label>
-                                            <input type="file" name="photo" class="form-control" placeholder="Enter photo" /><br>
-                                            <img src="{{asset($speaker->photo)}}" width="100px" alt="">
-                                        </div>
-                                     
-                                     
-                                        <div class="form-group">
-                                            <label>Details</label>
-                                            <div>
-                                                <textarea name="details" required class="form-control" rows="5" placeholder="Write something about speaker">{{$speaker->details}}</textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-0">
-                                            <div>
-                                                <button type="submit" class="btn btn-primary waves-effect waves-light">
-                                                    Update
-                                                </button>
-                                                <button type="reset" class="btn btn-secondary waves-effect m-l-5">
-                                                    Cancel
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
+                            <div class="form-group">
+                                <label>Start Time</label>
+                                <input type="time" value="{{$event->start_time}}" name="start_time" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Image</label>
+                                <input type="file" name="image" class="form-control" placeholder="Enter photo" />
+                            </div>
+                            <img src="{{asset($event->image)}}" width="100px">
+
+
+                            <div class="form-group">
+                                <label>Address</label>
+                                <div>
+                                    <textarea name="address" required class="form-control" rows="5" placeholder="Event Location">{{$event->address}}</textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Number of Tickets</label>
+                                <input type="number" name="num_tickets" value="{{$event->num_tickets}}" class="form-control" required placeholder="Ticket Quantity" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Category</label>
+                                <div>
+                                    <select name="catagory" id="" class="form-control">
+                                        <option value="">Select One</option>
+                                        @foreach ($catagories as $catagory)
+                                        <option value="{{$catagory->id}}" @selected(old('catagory')??$event->catagory_id==$catagory->id)>{{$event->catagory->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Speaker</label>
+                                <div>
+                                    <select name="speaker" id="" class="form-control">
+                                        <option value="">Select One</option>
+                                        @foreach ($speakers as $speaker)
+                                        <option value="{{$speaker->id}}" @selected(old('speaker')??$event->speaker_id==$speaker->id)>{{$event->speaker->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Organiser</label>
+                                <div>
+                                    <select name="organiser" id="" class="form-control">
+                                        <option value="">Select One</option>
+                                        @foreach ($organisers as $organiser)
+                                        <option value="{{$organiser->id}}" @selected(old('organiser')??$event->organiser_id==$organiser->id)>{{$event->organiser->name}}</option>
+
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Country</label>
+                                <div>
+                                    <select name="country" id="" class="form-control">
+                                        <option value="">Select One</option>
+                                        @foreach ($countries as $country)
+                                        <option value="{{$country->id}}" @selected(old('country')??$event->country_id==$country->id)>{{$event->country->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <label>City</label>
+                                <div>
+                                    <select name="city" id="" class="form-control">
+                                        <option value="">Select One</option>
+                                        @foreach ($cities as $city)
+                                        <option value="{{$city->id}}" @selected(old('city')??$event->city_id==$city->id)>{{$event->city->name}}</option>
+
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-0">
+                                <div>
+                                    <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                        Update
+                                    </button>
+                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
 
                                 </div>
                             </div>

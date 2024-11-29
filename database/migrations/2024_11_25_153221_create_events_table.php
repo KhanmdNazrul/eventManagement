@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('address');
             $table->integer('num_tickets');
+            $table->integer('catagory_id');
             $table->integer('speaker_id');
             $table->integer('organiser_id');
             $table->integer('country_id');

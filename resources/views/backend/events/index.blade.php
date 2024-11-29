@@ -92,17 +92,18 @@
                                         <tr>
                                             <th>SN</th>
                                             <th data-priority="1">Title</th>
-                                            <th data-priority="1">Description</th>
+                                            <th data-priority="3">Photo</th>
+                                            <th data-priority="2">Category</th>
+                                            <th data-priority="1">Speaker</th>
+                                            <th data-priority="2">Organiser</th>
+                                            <th data-priority="1">Description</th>      
+                                            <th data-priority="2">Num of Tickets</th>
+                                            <th data-priority="3">Address</th>                                
+                                            <th data-priority="3">Country</th>
+                                            <th data-priority="3">City</th>
                                             <th data-priority="3">Start Date</th>
                                             <th data-priority="3">End Date</th>
                                             <th data-priority="3">Start Time</th>
-                                            <th data-priority="3">Photo</th>
-                                            <th data-priority="3">Address</th>
-                                            <th data-priority="2">Num of Tickets</th>
-                                            <th data-priority="1">Speaker</th>
-                                            <th data-priority="2">Organiser</th>
-                                            <th data-priority="3">Country</th>
-                                            <th data-priority="3">City</th>
                                             <th data-priority="1" style="width:230px">Action</th>
                                         </tr>
                                     </thead>
@@ -112,17 +113,18 @@
                                         <tr>
                                             <th>{{$loop->iteration}}</th>
                                             <td>{{$event->title}}</td>
+                                            <td><img src="{{asset($event->image)}}" width="100px" alt=""></td>
+                                            <td>{{$event->catagory->name}}</td>                                           
+                                            <td>{{$event->speaker->name}}</td>
+                                            <td>{{$event->organiser->name}}</td>
                                             <td>{{$event->description}}</td>
+                                            <td>{{$event->num_tickets}}</td>
+                                            <td>{{$event->address}}</td>
+                                            <td>{{$event->country->name}}</td>
+                                            <td>{{$event->city->name}}</td>
                                             <td>{{$event->start_date}}</td>
                                             <td>{{$event->end_date}}</td>
                                             <td>{{$event->start_time}}</td>
-                                            <td><img src="{{asset($event->image)}}" width="100px" alt=""></td>
-                                            <td>{{$event->address}}</td>
-                                            <td>{{$event->num_tickets}}</td>
-                                            <td>{{$event->speaker->name}}</td>
-                                            <td>{{$event->organiser->name}}</td>
-                                            <td>{{$event->country->name}}</td>
-                                            <td>{{$event->city->name}}</td>
                                             <td>
 
                                                 <form action="{{route('event.destroy', $event->id)}}" method="post">
