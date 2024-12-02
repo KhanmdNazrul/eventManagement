@@ -16,7 +16,6 @@ class Attendee extends Authenticatable
     protected $fillable = [
         'name',
         'phone',
-        'address',
         'photo',
         'email',
         'password',

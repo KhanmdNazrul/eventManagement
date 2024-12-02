@@ -35,7 +35,7 @@
                     <div class="card card-pages mt-4">
                         <div class="card-body">
 
-                            <h1>Attendee registration form</h1>
+                            <h6>Attendee registration form</h6>
 
                             <div class="text-center mt-0 mb-3">
                                 <a href="index.html" class="logo logo-admin">
@@ -51,6 +51,13 @@
                                     <div class="col-12">
                                         <label for="usermenu">Name</label>
                                         <input class="form-control" type="text" name="name" required="" id="usermenu" placeholder="Username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-12">
+                                        <label for="usermenu">Phone</label>
+                                        <input class="form-control" type="text" name="phone" required="" id="usermenu" placeholder="Enter Phone Number">
                                     </div>
                                 </div>
 
