@@ -122,6 +122,11 @@
                             </div>
 
                             <div class="form-group">
+                                <label>Unit Price of ticket</label>
+                                <input type="number" name="unit_price" class="form-control" required placeholder="Ticket Price" />
+                            </div>
+
+                            <div class="form-group">
                                 <label>Category</label>
                                 <div>
                                     <select name="catagory" id="" class="form-control">

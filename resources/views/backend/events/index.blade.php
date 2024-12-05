@@ -98,6 +98,7 @@
                                             <th data-priority="2">Organiser</th>
                                             <th data-priority="1">Description</th>      
                                             <th data-priority="2">Num of Tickets</th>
+                                            <th data-priority="2">Unit Price</th>
                                             <th data-priority="3">Address</th>                                
                                             <th data-priority="3">Country</th>
                                             <th data-priority="3">City</th>
@@ -119,6 +120,7 @@
                                             <td>{{$event->organiser->name}}</td>
                                             <td>{{$event->description}}</td>
                                             <td>{{$event->num_tickets}}</td>
+                                            <td>{{$event->unit_price}}</td>
                                             <td>{{$event->address}}</td>
                                             <td>{{$event->country->name}}</td>
                                             <td>{{$event->city->name}}</td>

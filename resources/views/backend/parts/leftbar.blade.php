@@ -85,8 +85,8 @@
                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-check-circle"></i><span> Bookings <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> New Booking</a></li>
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Confirmed Booking</a></li>
+                        <li><a href="{{route('booking.create')}}"><i class="fa fa-angle-double-right"></i> New Booking</a></li>
+                        <li><a href="{{route('booking.index')}}"><i class="fa fa-angle-double-right"></i> Confirmed Booking</a></li>
                         <li><a href=""><i class="fa fa-angle-double-right"></i> Cancel Booking</a></li>
                     </ul>
                 </li>
@@ -112,6 +112,14 @@
                     <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-comment"></i><span> Comments<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
                         <li><a href=""><i class="fa fa-angle-double-right"></i> Manage comments</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-question-circle fa-lg"></i><span>Feedback<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <ul class="submenu">
+                        <li><a href="{{route('testimonial.create')}}"><i class="fa fa-angle-double-right"></i> Create New</a></li>
+                        <li><a href="{{route('testimonial.index')}}"><i class="fa fa-angle-double-right"></i> Manage feedback</a></li>
                     </ul>
                 </li>
 

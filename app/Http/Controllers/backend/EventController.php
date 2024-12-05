@@ -49,6 +49,8 @@ class EventController extends Controller
             'image'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'address' => 'required',
             'num_tickets' => 'required',
+            'unit_price' => 'required',
+
             'catagory' => 'required',
             'speaker' => 'required',
             'organiser' => 'required',
@@ -75,6 +77,8 @@ class EventController extends Controller
         $event->image = $photo;
         $event->address = $request->address;
         $event->num_tickets = $request->num_tickets;
+        $event->unit_price = $request->unit_price;
+
         $event->catagory_id = $request->catagory;
         $event->speaker_id = $request->speaker;
         $event->organiser_id = $request->organiser;
@@ -122,6 +126,8 @@ class EventController extends Controller
             'image'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'address' => 'required',
             'num_tickets' => 'required',
+            'unit_price' => 'required',
+
             'catagory' => 'required',
             'speaker' => 'required',
             'organiser' => 'required',
@@ -146,6 +152,7 @@ class EventController extends Controller
         $event->image = $photo;
         $event->address = $request->address;
         $event->num_tickets = $request->num_tickets;
+        $event->unit_price = $request->unit_price;
         $event->catagory_id = $request->catagory;
         $event->speaker_id = $request->speaker;
         $event->organiser_id = $request->organiser;

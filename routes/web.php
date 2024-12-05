@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AttendeeController;
+use App\Http\Controllers\backend\BookingController;
 use App\Http\Controllers\backend\CatagoryController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -17,8 +18,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.home');
 });
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 //admin dashboard
 Route::get('/admin/dashboard', function () {
@@ -50,6 +56,10 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 });
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
+    Route::resource('/booking', App\Http\Controllers\backend\BookingController::class);
+    Route::get('/booking/status/{id}', [BookingController::class, 'changeStatus'])->name('changeStatus');
+
+    Route::resource('/testimonial', App\Http\Controllers\backend\TestimonialController::class);
     Route::resource('/event', App\Http\Controllers\backend\EventController::class);
     Route::resource('/speaker', App\Http\Controllers\backend\SpeakerController::class);
     Route::resource('/organiser', App\Http\Controllers\backend\OrganiserController::class);
