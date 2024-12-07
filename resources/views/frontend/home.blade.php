@@ -48,9 +48,9 @@
                                     <div class="main-slider-three__sbu-title-shape-1"
                                         style="background-image: url(images/shapes/main-slider-three-sbu-title-shape-1.png);">
                                     </div>
-                                    <p class="main-slider-three__sbu-title">Welcome To Our Conference 2024</p>
+                                    <p class="main-slider-three__sbu-title">Welcome To Our Site</p>
                                 </div>
-                                <h2 class="main-slider-three__title">Biggest <br> Conference</h2>
+                                <h2 class="main-slider-three__title">Biggest <br> Event Planner</h2>
                                 <a href="#" class="main-slider-three__curved-circle">
                                     <div class="curved-circle">
                                         Discover more our work
@@ -94,9 +94,9 @@
                                     <div class="main-slider-three__sbu-title-shape-1"
                                         style="background-image: url(images/shapes/main-slider-three-sbu-title-shape-1.png);">
                                     </div>
-                                    <p class="main-slider-three__sbu-title">Welcome To Our Conference 2024</p>
+                                    <p class="main-slider-three__sbu-title">We are the First</p>
                                 </div>
-                                <h2 class="main-slider-three__title">Biggest <br> Conference</h2>
+                                <h2 class="main-slider-three__title">To manage <br> Your Event</h2>
                                 <a href="#" class="main-slider-three__curved-circle">
                                     <div class="curved-circle">
                                         Discover more our work
@@ -140,9 +140,9 @@
                                     <div class="main-slider-three__sbu-title-shape-1"
                                         style="background-image: url(images/shapes/main-slider-three-sbu-title-shape-1.png);">
                                     </div>
-                                    <p class="main-slider-three__sbu-title">Welcome To Our Conference 2024</p>
+                                    <p class="main-slider-three__sbu-title">We Are Expert on</p>
                                 </div>
-                                <h2 class="main-slider-three__title">Biggest <br> Conference</h2>
+                                <h2 class="main-slider-three__title">Event <br> Management</h2>
                                 <a href="#" class="main-slider-three__curved-circle">
                                     <div class="curved-circle">
                                         Discover more our work
@@ -170,100 +170,7 @@
 <!--Main Slider End-->
 
 <!--About Three Start-->
-<section class="about-three">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="100ms">
-                <div class="about-three__left">
-                    <div class="section-title text-left">
-                        <div class="section-title__tagline-box">
-                            <p class="section-title__tagline section-title__tagline--two"><span>//</span> About
-                                Company</p>
-                        </div>
-                        <h2 class="section-title__title">International Greatest <span>Conferences</span></h2>
-                    </div>
-                    <p class="about-three__text">Vestibulum tellus. Curabitur nlputate justo elit, at elementum
-                        ates
-                        pulvinar vel. in a Pellentesque habitant morbi tristique. Pellentesque
-                        habitant justo tristique.</p>
-                    <ul class="about-three__points list-unstyled">
-                        <li>
-                            <div class="icon">
-                                <div class="about-three__points-icon-shape"
-                                    style="background-image: url(assets/images/shapes/about-three-points-icon-shape.png);">
-                                </div>
-                                <span class="icon-connection"></span>
-                            </div>
-                            <div class="content">
-                                <h4>Target Audience</h4>
-                                <p>Utilize social media platforms, email newsletters, and <br>
-                                    partnerships with event organizers</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <div class="about-three__points-icon-shape"
-                                    style="background-image: url(assets/images/shapes/about-three-points-icon-shape.png);">
-                                </div>
-                                <span class="icon-team"></span>
-                            </div>
-                            <div class="content">
-                                <h4>20+ Main Sponser</h4>
-                                <p>Utilize social media platforms, email newsletters, and <br>
-                                    partnerships with event organizers</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="about-three__btn-and-user-box">
-                        <div class="about-three__btn-box">
-                            <a href="about.html" class="about-three__btn thm-btn-two"><span
-                                    class="fas fa-arrow-circle-right"></span>Discover more</a>
-                        </div>
-                        <div class="about-three__user-info">
-                            <div class="about-three__user-img">
-                                <img src="{{asset('images/resources/about-user-user-img.jpg')}}" alt="">
-                            </div>
-                            <div class="about-three__user-sign">
-                                <p>Mike Hardson</p>
-                                <span>CEO of Agrion</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6">
-                <div class="about-three__right">
-                    <div class="about-three__img"
-                        style="background-image: url(assets/images/shapes/about-three-img-shape-1.png);"></div>
-                    <div class="about-three__experience">
-                        <div class="about-three__experience-count count-box">
-                            <h3 class="count-text" data-stop="15" data-speed="1500">00</h3>
-                            <span>+</span>
-                            <p>Years</p>
-                        </div>
-                        <p class="about-three__experience-text">of Experience</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!--About Three End-->
-
-<!--Countdown One Start-->
-<section class="countdown-two">
-    <div class="container">
-        <div class="countdown-two__inner wow fadeInUp" data-wow-delay="300ms">
-            <div class="countdown-two__bg"
-                style="background-image: url(assets/images/backgrounds/countdown-two-bg.jpg);"></div>
-            <div class="countdown-two__countdown-timer-box">
-                <div class="countdown time-countdown-three" data-countdown-time="2024/08/01">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Countdown One End-->
 
 <!--Feature Two Start-->
 <section class="feature-two">
@@ -373,46 +280,22 @@
     <div class="container">
         <div class="section-title text-center">
             <div class="section-title__tagline-box">
-                <p class="section-title__tagline"><span>//</span> Schedule <span>//</span> </p>
+                <p class="section-title__tagline"><span>//</span> Upcoming Events <span>//</span> </p>
             </div>
-            <h2 class="section-title__title">Information Program & Event <br> <span>Schedule</span></h2>
+            <h2 class="section-title__title"> Popular Events <br> <span>Schedule</span></h2>
         </div>
         <div class="events-three__main-tab-box tabs-box">
-            <ul class="tab-buttons clearfix list-unstyled">
-                <li data-tab="#1stday" class="tab-btn">
-                    <div class="events-three__tab-btn-content">
-                        <p>November 12 , 2023</p>
-                        <h3>1<span>st</span>Day</h3>
-                    </div>
-                </li>
-                <li data-tab="#2ndday" class="tab-btn active-btn">
-                    <div class="events-three__tab-btn-content">
-                        <p>November 15 , 2023</p>
-                        <h3>2<span>nd</span>Day</h3>
-                    </div>
-                </li>
-                <li data-tab="#3rdday" class="tab-btn">
-                    <div class="events-three__tab-btn-content">
-                        <p>November 18 , 2023</p>
-                        <h3>3<span>rd</span>Day</h3>
-                    </div>
-                </li>
-                <li data-tab="#4thdday" class="tab-btn">
-                    <div class="events-three__tab-btn-content">
-                        <p>November 22 , 2023</p>
-                        <h3>4<span>th</span>Day</h3>
-                    </div>
-                </li>
-            </ul>
+           
             <div class="tabs-content">
                 <!--tab-->
-                <div class="tab" id="1stday">
+                <div class="tab active-tab">
                     <div class="events-three__main-content-box">
                         <ul class="list-unstyled events-three__content-list">
+                            @foreach($events as $event)
                             <li class="events-three__content-single">
                                 <div class="events-three__content-left">
                                     <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-1.jpg')}}"
+                                        <img src="{{asset($event->image)}}"
                                             alt="">
                                         <div class="events-three__video-link">
                                             <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
@@ -426,12 +309,11 @@
                                     </div>
                                     <div class="events-three__content-user">
                                         <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-1.jpg')}}"
-                                                alt="">
+                                            <img src="{{asset($event->speaker->photo)}}" alt="">
                                         </div>
                                         <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">John Singh</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
+                                            <h4 class="events-three__content-user-name">{{$event->speaker->name}}</h4>
+                                            <p class="events-three__content-user-sub-title">{{$event->speaker->profession}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -439,8 +321,7 @@
                                     <div class="events-three__content-right-content">
                                         <div class="events-three__content-right-content-left">
                                             <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Kelimontos DJ
-                                                    Party 2019</a></h4>
+                                                    href="#">{{$event->title}}</a></h4>
                                             <ul class="list-unstyled events-three__content-right-content-list">
                                                 <li>
                                                     <div class="icon">
@@ -455,820 +336,37 @@
                                                         <span class="icon-youtube"></span>
                                                     </div>
                                                     <div class="text">
-                                                        <p>Video Streming</p>
+                                                        <p>Video Streaming</p>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
+                                            <h4 class="events-three__content-right-content-title-two">{{$event->start_date}}
                                             </h4>
                                             <div class="events-three__content-right-content-time">
                                                 <div class="icon">
                                                     <span class="icon-time"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
+                                                    <p>{{$event->start_time}}</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
+                                        <a href="{{route('show',$event->id)}}" class="about-three__btn thm-btn-two"><span
                                                 class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
                                     </div>
                                 </div>
                             </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-2.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-2.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Mitra Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Meeting With Word</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-3.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-3.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Kowlant Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Humble Hill Running Day</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
+                            @endforeach
+                           
                         </ul>
                     </div>
                 </div>
-                <!--tab-->
-                <!--tab-->
-                <div class="tab active-tab" id="2ndday">
-                    <div class="events-three__main-content-box">
-                        <ul class="list-unstyled events-three__content-list">
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-1.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-1.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">John Singh</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Kelimontos DJ
-                                                    Party 2019</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-2.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-2.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Mitra Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Meeting With Word</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-3.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-3.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Kowlant Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="contact.html">Humble Hill Running Day</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--tab-->
-                <!--tab-->
-                <div class="tab" id="3rdday">
-                    <div class="events-three__main-content-box">
-                        <ul class="list-unstyled events-three__content-list">
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-1.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-1.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">John Singh</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Kelimontos DJ
-                                                    Party 2019</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-2.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-2.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Mitra Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Meeting With Word</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-3.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-3.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Kowlant Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="contact.html">Humble Hill Running Day</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--tab-->
-                <!--tab-->
-                <div class="tab" id="4thdday">
-                    <div class="events-three__main-content-box">
-                        <ul class="list-unstyled events-three__content-list">
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-1.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-1.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">John Singh</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Kelimontos DJ
-                                                    Party 2019</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-2.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-2.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Mitra Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Meeting With Word</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="events-three__content-single">
-                                <div class="events-three__content-left">
-                                    <div class="events-three__content-img">
-                                        <img src="{{asset('images/resources/events-three-content-img-1-3.jpg')}}"
-                                            alt="">
-                                        <div class="events-three__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                                class="video-popup">
-                                                <div class="events-three__video-icon">
-                                                    <span class="icon-play"></span>
-                                                    <i class="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__content-user">
-                                        <div class="events-three__content-user-img">
-                                            <img src="{{asset('images/resources/events-three-content-user-img-1-3.jpg')}}"
-                                                alt="">
-                                        </div>
-                                        <div class="events-three__content-user-info">
-                                            <h4 class="events-three__content-user-name">Kowlant Smith</h4>
-                                            <p class="events-three__content-user-sub-title">UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="events-three__content-right">
-                                    <div class="events-three__content-right-content">
-                                        <div class="events-three__content-right-content-left">
-                                            <h4 class="events-three__content-right-content-title"><a
-                                                    href="schedule-list.html">Humble Hill Running Day</a></h4>
-                                            <ul class="list-unstyled events-three__content-right-content-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-coffee-cup"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Coffee & Snacks</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-youtube"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Video Streming</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="events-three__content-right-content-right">
-                                            <h4 class="events-three__content-right-content-title-two">Wednesday
-                                            </h4>
-                                            <div class="events-three__content-right-content-time">
-                                                <div class="icon">
-                                                    <span class="icon-time"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p>10.00 am - 12.00 pm</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="events-three__btn-box">
-                                        <a href="contact.html" class="about-three__btn thm-btn-two"><span
-                                                class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--tab-->
+               
+             
             </div>
         </div>
     </div>

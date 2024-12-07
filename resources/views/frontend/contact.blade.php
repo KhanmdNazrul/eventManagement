@@ -1,73 +1,58 @@
 @extends('frontend.layouts.app')
-
 @section('css')
+<link rel="stylesheet" href="{{asset('vendors/bootstrap/css/bootstrap.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/animate/animate.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/animate/custom-animate.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/fontawesome/css/all.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/jarallax/jarallax.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/odometer/odometer.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/swiper/swiper.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/envens-icons/style.css')}}">
+<link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.carousel.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.theme.default.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/nice-select/nice-select.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/jquery-ui/jquery-ui.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/timepicker/timePicker.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/reey-font/stylesheet.css')}}" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="{{asset('vendors/bootstrap/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/animate/animate.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/animate/custom-animate.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/fontawesome/css/all.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/jarallax/jarallax.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/odometer/odometer.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/swiper/swiper.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/envens-icons/style.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.theme.default.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/nice-select/nice-select.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/jquery-ui/jquery-ui.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/timepicker/timePicker.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/reey-font/stylesheet.css')}}" />
-
-    <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('css/envens.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/envens-responsive.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/color-2.css')}}" />
-
+<!-- template styles -->
+<link rel="stylesheet" href="{{asset('css/envens.css')}}" />
+<link rel="stylesheet" href="{{asset('css/envens-responsive.css')}}" />
+<link rel="stylesheet" href="{{asset('css/color-2.css')}}" />
 @endsection
 
 @section('js')
 <script src="{{asset('vendors/jquery/jquery-3.6.0.min.js')}}"></script>
-    <script src="{{asset('vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('vendors/jarallax/jarallax.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-circle-progress/jquery.circle-progress.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-validate/jquery.validate.min.js')}}"></script>
-    <script src="{{asset('vendors/odometer/odometer.min.js')}}"></script>
-    <script src="{{asset('vendors/swiper/swiper.min.js')}}"></script>
-    <script src="{{asset('vendors/wnumb/wNumb.min.js')}}"></script>
-    <script src="{{asset('vendors/wow/wow.js')}}"></script>
-    <script src="{{asset('vendors/isotope/isotope.js')}}"></script>
-    <script src="{{asset('vendors/owl-carousel/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('vendors/bootstrap-select/js/bootstrap-select.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-ui/jquery-ui.js')}}"></script>
-    <script src="{{asset('vendors/timepicker/timePicker.js')}}"></script>
-    <script src="{{asset('vendors/jquery.circle-type/jquery.circleType.js')}}"></script>
-    <script src="{{asset('vendors/jquery.circle-type/jquery.lettering.min.js')}}"></script>
-    <script src="{{asset('vendors/nice-select/jquery.nice-select.min.js')}}"></script>
-    <script src="{{asset('vendors/countdown/countdown.min.js')}}"></script>
-    <script src="{{asset('vendors/marque/marquee.min.js')}}"></script>
-    <!-- template js -->
-    <script src="{{asset('js/envens.js')}}"></script>
-
+<script src="{{asset('vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('vendors/jarallax/jarallax.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-circle-progress/jquery.circle-progress.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-validate/jquery.validate.min.js')}}"></script>
+<script src="{{asset('vendors/odometer/odometer.min.js')}}"></script>
+<script src="{{asset('vendors/swiper/swiper.min.js')}}"></script>
+<script src="{{asset('vendors/wnumb/wNumb.min.js')}}"></script>
+<script src="{{asset('vendors/wow/wow.js')}}"></script>
+<script src="{{asset('vendors/isotope/isotope.js')}}"></script>
+<script src="{{asset('vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+<script src="{{asset('vendors/bootstrap-select/js/bootstrap-select.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-ui/jquery-ui.js')}}"></script>
+<script src="{{asset('vendors/timepicker/timePicker.js')}}"></script>
+<script src="{{asset('vendors/jquery.circle-type/jquery.circleType.js')}}"></script>
+<script src="{{asset('vendors/jquery.circle-type/jquery.lettering.min.js')}}"></script>
+<script src="{{asset('vendors/nice-select/jquery.nice-select.min.js')}}"></script>
+<script src="{{asset('vendors/countdown/countdown.min.js')}}"></script>
+<script src="{{asset('vendors/marque/marquee.min.js')}}"></script>
+<!-- template js -->
+<script src="{{asset('js/envens.js')}}"></script>
 @endsection
 
 @section('content')
-
 <section class="page-header">
-    <div class="page-header__bg" style="background-image: url('images/backgrounds/page-header-bg.jpg);">
+    <div class="page-header__bg" style="background-image: url('images/backgrounds/site-footer-two-bg.jpg');">
     </div>
     <div class="page-header__shape-1">
         <img src="{{asset('images/shapes/page-header-shape-1.png')}}" alt="">
@@ -85,7 +70,7 @@
                 <ul class="thm-breadcrumb list-unstyled">
                     <li><a href="index.html">Home</a></li>
                     <li><span>-</span></li>
-                    <li>Contact Us</li>
+                    <li>Event Details</li>
                 </ul>
             </div>
         </div>
@@ -233,5 +218,4 @@
         </div>
     </div>
 </section>
-@endsection
-
+@ensection

@@ -17,9 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home');
-});
+Route::resource('/', App\Http\Controllers\frontend\HomeController::class);
+Route::get('/show/{id?}', [App\Http\Controllers\frontend\eventShowController::class, 'show'])->name('show');
 
 Route::get('/about', function () {
     return view('frontend.about');
@@ -27,6 +26,10 @@ Route::get('/about', function () {
 
 Route::get('/contact', function () {
     return view('frontend.contact');
+});
+
+Route::get('/event', function () {
+    return view('frontend.events');
 });
 
 

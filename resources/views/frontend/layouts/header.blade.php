@@ -62,6 +62,10 @@
                                     <li>
                                         <a href="{{url('/about')}}">About</a>
                                     </li>
+
+                                    <li>
+                                        <a href="{{url('/event')}}">Events</a>
+                                    </li>
                                     <li class="dropdown">
                                         <a href="#">Pages</a>
                                         <ul>
@@ -78,13 +82,7 @@
                                             <li><a href="coming-soon.html">Coming Soon</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Schedule</a>
-                                        <ul>
-                                            <li><a href="schedule-list.html">Schedule List 01</a></li>
-                                            <li><a href="schedule-list-2.html">Schedule List 02</a></li>
-                                        </ul>
-                                    </li>
+                                   
                                     <li class="dropdown">
                                         <a href="#">Blog</a>
                                         <ul>

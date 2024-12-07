@@ -53,16 +53,16 @@
 
 <!--Page Header Start-->
 <section class="page-header">
-    <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
+    <div class="page-header__bg" style="background-image: url(images/backgrounds/page-header-bg.jpg);">
     </div>
     <div class="page-header__shape-1">
-        <img src="{{asset('images/shapes/page-header-shape-1.png" alt="">
+        <img src="{{asset('images/shapes/page-header-shape-1.png')}}" alt="">
     </div>
     <div class="page-header__shape-2">
-        <img src="{{asset('images/shapes/page-header-shape-2.png" alt="">
+        <img src="{{asset('images/shapes/page-header-shape-2.png')}}" alt="">
     </div>
     <div class="page-header__shape-3">
-        <img src="{{asset('images/shapes/page-header-shape-3.png" alt="">
+        <img src="{{asset('images/shapes/page-header-shape-3.png')}}" alt="">
     </div>
     <div class="container">
         <div class="page-header__inner">
@@ -86,7 +86,7 @@
             <div class="col-xl-6">
                 <div class="about-two__left">
                     <div class="about-two__img"
-                        style="background-image: url(assets/images/resources/about-two-img-2.png);"></div>
+                        style="background-image: url(images/resources/about-two-img-2.png);"></div>
                 </div>
             </div>
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="300ms">
@@ -96,7 +96,7 @@
                             <p class="section-title__tagline section-title__tagline--two"><span>//</span> About
                                 Company</p>
                         </div>
-                        <h2 class="section-title__title">International Business <span>Conferences</span></h2>
+                        <h2 class="section-title__title">International Business and <span>Cultural Events Management Company</span></h2>
                     </div>
                     <p class="about-two__text">There are many variations of passages of Lorem Ipsum availa<br>
                         ble, but the majority have suffered alteration in some form, by injected<br> humour, or
@@ -107,15 +107,15 @@
                                 <span class="icon-check-1"></span>
                             </div>
                             <p class="about-two__solition-text">Solution for small &
-                                <br> large businesses
+                                <br> large events
                             </p>
                         </div>
                         <div class="about-two__solution-single">
                             <div class="icon">
                                 <span class="icon-check-1"></span>
                             </div>
-                            <p class="about-two__solition-text">Solution for small &
-                                <br> large businesses
+                            <p class="about-two__solition-text">Solution for taking hassle &
+                                <br> large pain on making event
                             </p>
                         </div>
                     </div>
@@ -140,11 +140,11 @@
                         </div>
                         <div class="about-two__client-info">
                             <div class="about-two__client-img">
-                                <img src="{{asset('images/resources/about-two-client-img.jpg" alt="">
+                                <img src="{{asset('images/resources/about-two-client-img.jpg')}}" alt="">
                             </div>
                             <div class="content">
-                                <h4>Mike Hardson</h4>
-                                <p>CEO of Agrion</p>
+                                <h4>Nazrul Khan</h4>
+                                <p>CEO of Eventee Supreme</p>
                             </div>
                         </div>
                     </div>
@@ -156,59 +156,12 @@
 <!--About Two End-->
 
 <!--Countdown One Start-->
-<section class="countdown-one">
-    <div class="countdown-one__bg"
-        style="background-image: url(assets/images/backgrounds/countdown-one-bg.jpg);"></div>
-    <div class="countdown-one__shape-2 float-bob-x">
-        <img src="{{asset('images/shapes/countdown-one-shape-2.png" alt="">
-    </div>
-    <div class="countdown-one__shape-3 float-bob-y">
-        <img src="{{asset('images/shapes/countdown-one-shape-3.png" alt="">
-    </div>
-    <div class="countdown-one__shape-4 float-bob-y-2">
-        <img src="{{asset('images/shapes/countdown-one-shape-4.png" alt="">
-    </div>
-    <div class="countdown-one__shape-5 zoominout">
-        <img src="{{asset('images/shapes/countdown-one-shape-5.png" alt="">
-    </div>
-    <div class="countdown-one__shape-6">
-        <img src="{{asset('images/shapes/countdown-one-shape-6.png" alt="">
-    </div>
-    <div class="countdown-one__shape-7">
-        <img src="{{asset('images/shapes/countdown-one-shape-7.png" alt="">
-    </div>
-    <div class="countdown-one__shape-8 float-bob-x">
-        <img src="{{asset('images/shapes/countdown-one-shape-8.png" alt="">
-    </div>
-    <div class="container">
-        <div class="countdown-one__top">
-            <div class="section-title text-left">
-                <div class="section-title__tagline-box">
-                    <p class="section-title__tagline section-title__tagline--two"><span>//</span> Next Event</p>
-                </div>
-                <h2 class="section-title__title">Our Next Event
-                    <br> Starts In
-                </h2>
-            </div>
-            <div class="countdown-one__btn-box">
-                <a href="contact.html" class="countdown-one__btn thm-btn-two"><span
-                        class="fas fa-arrow-circle-right"></span>Book Your Seat</a>
-            </div>
-        </div>
-        <div class="countdown-one__inner">
-            <div class="countdown-one__shape-1">
-                <img src="{{asset('images/shapes/countdown-one-shape-1.png" alt="">
-            </div>
-            <div class="countdown time-countdown-one" data-countdown-time="2024/07/23">
-            </div>
-        </div>
-    </div>
-</section>
+
 <!--Countdown One End-->
 
 <!--Team Two Start-->
 <section class="team-two">
-    <div class="team-two__bg" style="background-image: url(assets/images/backgrounds/team-two-bg.jpg);"></div>
+    <div class="team-two__bg" style="background-image: url(images/backgrounds/team-two-bg.jpg);"></div>
     <div class="container">
         <div class="team-two__top">
             <div class="section-title text-left">
@@ -228,7 +181,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                 <div class="team-two__single">
                     <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-1.png" alt="">
+                        <img src="{{asset('images/team/team-2-1.png')}}" alt="">
                     </div>
                     <div class="team-two__social">
                         <a href="#"><span class="fab fa-twitter"></span></a>
@@ -250,7 +203,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="300ms">
                 <div class="team-two__single">
                     <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-2.png" alt="">
+                        <img src="{{asset('images/team/team-2-2.png')}}" alt="">
                     </div>
                     <div class="team-two__social">
                         <a href="#"><span class="fab fa-twitter"></span></a>
@@ -272,7 +225,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="600ms">
                 <div class="team-two__single">
                     <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-3.png" alt="">
+                        <img src="{{asset('images/team/team-2-3.png')}}" alt="">
                     </div>
                     <div class="team-two__social">
                         <a href="#"><span class="fab fa-twitter"></span></a>
@@ -294,7 +247,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="900ms">
                 <div class="team-two__single">
                     <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-4.png" alt="">
+                        <img src="{{asset('images/team/team-2-4.png')}}" alt="">
                     </div>
                     <div class="team-two__social">
                         <a href="#"><span class="fab fa-twitter"></span></a>
@@ -320,10 +273,10 @@
 <!--Testimonial One Start-->
 <section class="testimonial-one">
     <div class="testimonial-one__shape-1 img-bounce">
-        <img src="{{asset('images/shapes/testimonial-one-shape-1.png" alt="">
+        <img src="{{asset('images/shapes/testimonial-one-shape-1.png')}}" alt="">
     </div>
     <div class="testimonial-one__shape-2 float-bob-x">
-        <img src="{{asset('images/shapes/testimonial-one-shape-2.png" alt="">
+        <img src="{{asset('images/shapes/testimonial-one-shape-2.png')}}" alt="">
     </div>
     <div class="container">
         <div class="testimonial-one__top">
@@ -406,7 +359,7 @@
                                 that can handles to forward...</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="{{asset('images/testimonial/testimonial-1-1.jpg" alt="">
+                                    <img src="{{asset('images/testimonial/testimonial-1-1.jpg')}}" alt="">
                                 </div>
                                 <div class="testimonial-one__client-content">
                                     <h3><a href="testimonials.html">Thomas Smith</a></h3>
@@ -437,7 +390,7 @@
                                 that can handles to forward...</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="{{asset('images/testimonial/testimonial-1-2.jpg" alt="">
+                                    <img src="{{asset('images/testimonial/testimonial-1-2.jpg')}}" alt="">
                                 </div>
                                 <div class="testimonial-one__client-content">
                                     <h3><a href="testimonials.html">Daniel Son </a></h3>
@@ -468,7 +421,7 @@
                                 that can handles to forward...</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="{{asset('images/testimonial/testimonial-1-3.jpg" alt="">
+                                    <img src="{{asset('images/testimonial/testimonial-1-3.jpg')}}" alt="">
                                 </div>
                                 <div class="testimonial-one__client-content">
                                     <h3><a href="testimonials.html">Donald Smith</a></h3>

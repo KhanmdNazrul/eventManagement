@@ -58,16 +58,14 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
 
-
-
         @yield('content')
 
         <!--Site Footer Two Start-->
         <footer class="site-footer-two">
             <div class="site-footer-two__bg"
-                style="background-image: url(assets/images/backgrounds/site-footer-two-bg.jpg);"></div>
+                style="background-image: url(images/backgrounds/site-footer-two-bg.jpg);"></div>
             <div class="site-footer-two__shape-bg-1"
-                style="background-image: url(assets/images/shapes/site-footer-two-shape-bg-1.png);"></div>
+                style="background-image: url(images/shapes/site-footer-two-shape-bg-1.png);"></div>
             <div class="site-footer-two__top">
                 <div class="site-footer-two__top-shape-2 float-bob-x">
                     <img src="{{asset('images/shapes/site-footer-two-top-shape-2.png')}}" alt="">
@@ -86,7 +84,7 @@
                             </div>
                             <div class="site-footer-two__top-icon-content">
                                 <p>Our Location</p>
-                                <h5>191 Integer, LA 0829</h5>
+                                <h5>80 Kakrail,Dhaka Bangladesh</h5>
                             </div>
                         </div>
                         <div class="site-footer-two__logo">
@@ -98,7 +96,7 @@
                             </div>
                             <div class="site-footer-two__top-icon-content">
                                 <p>Make a Call</p>
-                                <h5><a href="tel:2334567908">(+233) 456 79 08</a></h5>
+                                <h5><a href="tel:2334567908">(+88) 0184 520 7869</a></h5>
                             </div>
                         </div>
                     </div>
@@ -214,7 +212,7 @@
             <div class="site-footer-two__bottom">
                 <div class="container">
                     <div class="site-footer-two__bottom-inner">
-                        <p class="site-footer-two__bottom-text">Copyright © 2024 all rights reserved.</p>
+                        <p class="site-footer-two__bottom-text">Copyright © 2024 Eventee Supreme, all rights reserved.</p>
                         <ul class="list-unstyled site-footer-two__botom-menu">
                             <li><a href="about.html">Privacy</a></li>
                             <li><a href="about.html">Terms & Conditions</a></li>
