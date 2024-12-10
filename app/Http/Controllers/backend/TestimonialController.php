@@ -22,7 +22,7 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-         return view('backend.testimonials.create');
+        return view('backend.testimonials.create');
     }
 
     /**
@@ -30,33 +30,9 @@ class TestimonialController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'designation' => 'required',
-            'company_name' => 'required',
-            'photo'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'feedback' => 'required',
-        ]);
-        if ($image = $request->file('photo')) {
-            $destinationPath = 'images/';
-            $postImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
-            $image->move($destinationPath, $postImage);
-            $photo = $destinationPath.$postImage;
-        }else{
-            $photo= 'images/nophoto.jpg';
-        }
-
-        $testimonial =  new Testimonial;
-
-        $testimonial->name = $request->name;
-        $testimonial->designation = $request->designation;
-        $testimonial->company_name = $request->company_name;
-        $testimonial->photo = $photo;
-        $testimonial->feedback = $request->feedback;
-        $testimonial->save();
 
 
-      return redirect()->route('testimonial.index')->with('msg', 'New Feedback Added Successfully');
+        //
     }
 
     /**

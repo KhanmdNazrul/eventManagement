@@ -285,7 +285,7 @@
             <h2 class="section-title__title"> Popular Events <br> <span>Schedule</span></h2>
         </div>
         <div class="events-three__main-tab-box tabs-box">
-           
+
             <div class="tabs-content">
                 <!--tab-->
                 <div class="tab active-tab">
@@ -361,12 +361,12 @@
                                 </div>
                             </li>
                             @endforeach
-                           
+
                         </ul>
                     </div>
                 </div>
-               
-             
+
+
             </div>
         </div>
     </div>
@@ -450,11 +450,14 @@
                     }'>
                 <div class="swiper-wrapper">
                     <!--Team Three Single Start-->
-                    <div class="swiper-slide">
-                        <div class="team-three__single">
+
+                    
+                    <div>
+                    @foreach($speakers as $speaker)
+                    <div class="team-three__single">
                             <div class="team-three__img-box">
                                 <div class="team-three__img">
-                                    <img src="{{asset('images/team/team-three-3-1.jpg')}}" alt="">
+                                    <img src="{{asset($speaker->photo)}}" height="400" width="500" alt="">
                                 </div>
                                 <div class="team-three__share-and-social">
                                     <div class="team-three__share">
@@ -468,71 +471,19 @@
                                     </div>
                                 </div>
                                 <div class="team-three__content">
-                                    <p class="team-three__sub-title">Ceo Founder</p>
-                                    <h4 class="team-three__title"><a href="speaker-single.html">Matthew
-                                            White</a>
+                                    <p class="team-three__sub-title">{{$speaker->profession}}</p>
+                                    <h4 class="team-three__title"><a href="{{route('speaker',$speaker->id)}}">{{$speaker->name}}</a>
                                     </h4>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
+
+                    
                     <!--Team Three Single End-->
-                    <!--Team Three Single Start-->
-                    <div class="swiper-slide">
-                        <div class="team-three__single">
-                            <div class="team-three__img-box">
-                                <div class="team-three__img">
-                                    <img src="{{asset('images/team/team-three-3-2.jpg')}}" alt="">
-                                </div>
-                                <div class="team-three__share-and-social">
-                                    <div class="team-three__share">
-                                        <a href="#"><span class="fas fa-share-alt"></span></a>
-                                    </div>
-                                    <div class="team-three__social">
-                                        <a href="#"><span class="fab fa-twitter"></span></a>
-                                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                                        <a href="#"><span class="fab fa-pinterest-p"></span></a>
-                                        <a href="#"><span class="fas fa-wifi"></span></a>
-                                    </div>
-                                </div>
-                                <div class="team-three__content">
-                                    <p class="team-three__sub-title">Ceo Founder</p>
-                                    <h4 class="team-three__title"><a href="speaker-single.html">D. Saira
-                                            Smith</a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Team Three Single End-->
-                    <!--Team Three Single Start-->
-                    <div class="swiper-slide">
-                        <div class="team-three__single">
-                            <div class="team-three__img-box">
-                                <div class="team-three__img">
-                                    <img src="{{asset('images/team/team-three-3-3.jpg')}}" alt="">
-                                </div>
-                                <div class="team-three__share-and-social">
-                                    <div class="team-three__share">
-                                        <a href="#"><span class="fas fa-share-alt"></span></a>
-                                    </div>
-                                    <div class="team-three__social">
-                                        <a href="#"><span class="fab fa-twitter"></span></a>
-                                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                                        <a href="#"><span class="fab fa-pinterest-p"></span></a>
-                                        <a href="#"><span class="fas fa-wifi"></span></a>
-                                    </div>
-                                </div>
-                                <div class="team-three__content">
-                                    <p class="team-three__sub-title">Ceo Founder</p>
-                                    <h4 class="team-three__title"><a href="speaker-single.html">Maksdora
-                                            White</a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Team Three Single End-->
+
+
                 </div>
                 <!-- If we need navigation buttons -->
 

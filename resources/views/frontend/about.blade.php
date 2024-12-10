@@ -1,59 +1,59 @@
 @extends('frontend.layouts.app')
 
 @section('css')
-    <link rel="stylesheet" href="{{asset('vendors/bootstrap/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/animate/animate.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/animate/custom-animate.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/fontawesome/css/all.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/jarallax/jarallax.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/odometer/odometer.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/swiper/swiper.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/envens-icons/style.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.theme.default.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/nice-select/nice-select.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/jquery-ui/jquery-ui.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/timepicker/timePicker.css')}}" />
-    <link rel="stylesheet" href="{{asset('vendors/reey-font/stylesheet.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/bootstrap/css/bootstrap.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/animate/animate.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/animate/custom-animate.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/fontawesome/css/all.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/jarallax/jarallax.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/odometer/odometer.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/swiper/swiper.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/envens-icons/style.css')}}">
+<link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.carousel.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/owl-carousel/owl.theme.default.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/nice-select/nice-select.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/jquery-ui/jquery-ui.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/timepicker/timePicker.css')}}" />
+<link rel="stylesheet" href="{{asset('vendors/reey-font/stylesheet.css')}}" />
 
-    <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('css/envens.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/envens-responsive.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/color-2.css')}}" />
+<!-- template styles -->
+<link rel="stylesheet" href="{{asset('css/envens.css')}}" />
+<link rel="stylesheet" href="{{asset('css/envens-responsive.css')}}" />
+<link rel="stylesheet" href="{{asset('css/color-2.css')}}" />
 @endsection
 
 @section('js')
 <script src="{{asset('vendors/jquery/jquery-3.6.0.min.js')}}"></script>
-    <script src="{{asset('vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('vendors/jarallax/jarallax.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-circle-progress/jquery.circle-progress.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-validate/jquery.validate.min.js')}}"></script>
-    <script src="{{asset('vendors/odometer/odometer.min.js')}}"></script>
-    <script src="{{asset('vendors/swiper/swiper.min.js')}}"></script>
-    <script src="{{asset('vendors/wnumb/wNumb.min.js')}}"></script>
-    <script src="{{asset('vendors/wow/wow.js')}}"></script>
-    <script src="{{asset('vendors/isotope/isotope.js')}}"></script>
-    <script src="{{asset('vendors/owl-carousel/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('vendors/bootstrap-select/js/bootstrap-select.min.js')}}"></script>
-    <script src="{{asset('vendors/jquery-ui/jquery-ui.js')}}"></script>
-    <script src="{{asset('vendors/timepicker/timePicker.js')}}"></script>
-    <script src="{{asset('vendors/jquery.circle-type/jquery.circleType.js')}}"></script>
-    <script src="{{asset('vendors/jquery.circle-type/jquery.lettering.min.js')}}"></script>
-    <script src="{{asset('vendors/nice-select/jquery.nice-select.min.js')}}"></script>
-    <script src="{{asset('vendors/countdown/countdown.min.js')}}"></script>
-    <script src="{{asset('vendors/marque/marquee.min.js')}}"></script>
+<script src="{{asset('vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('vendors/jarallax/jarallax.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-circle-progress/jquery.circle-progress.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-validate/jquery.validate.min.js')}}"></script>
+<script src="{{asset('vendors/odometer/odometer.min.js')}}"></script>
+<script src="{{asset('vendors/swiper/swiper.min.js')}}"></script>
+<script src="{{asset('vendors/wnumb/wNumb.min.js')}}"></script>
+<script src="{{asset('vendors/wow/wow.js')}}"></script>
+<script src="{{asset('vendors/isotope/isotope.js')}}"></script>
+<script src="{{asset('vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+<script src="{{asset('vendors/bootstrap-select/js/bootstrap-select.min.js')}}"></script>
+<script src="{{asset('vendors/jquery-ui/jquery-ui.js')}}"></script>
+<script src="{{asset('vendors/timepicker/timePicker.js')}}"></script>
+<script src="{{asset('vendors/jquery.circle-type/jquery.circleType.js')}}"></script>
+<script src="{{asset('vendors/jquery.circle-type/jquery.lettering.min.js')}}"></script>
+<script src="{{asset('vendors/nice-select/jquery.nice-select.min.js')}}"></script>
+<script src="{{asset('vendors/countdown/countdown.min.js')}}"></script>
+<script src="{{asset('vendors/marque/marquee.min.js')}}"></script>
 @endsection
 
 @section('content')
 
 <!--Page Header Start-->
 <section class="page-header">
-    <div class="page-header__bg" style="background-image: url(images/backgrounds/page-header-bg.jpg);">
+    <div class="page-header__bg" style="background-image: url('images/backgrounds/site-footer-two-bg.jpg');">
     </div>
     <div class="page-header__shape-1">
         <img src="{{asset('images/shapes/page-header-shape-1.png')}}" alt="">
@@ -130,7 +130,7 @@
                             <div class="icon">
                                 <span class="icon-check-1"></span>
                             </div>
-                            <p>Lorem Ipsum has been the ndustry standard dummy text</p>
+                            <p>Lorem Ipsum has been the industry standard dummy text</p>
                         </li>
                     </ul>
                     <div class="about-two__btn-and-client-info">
@@ -140,7 +140,7 @@
                         </div>
                         <div class="about-two__client-info">
                             <div class="about-two__client-img">
-                                <img src="{{asset('images/resources/about-two-client-img.jpg')}}" alt="">
+                                <img src="{{asset($admin->photo)}}" alt="">
                             </div>
                             <div class="content">
                                 <h4>Nazrul Khan</h4>
@@ -169,7 +169,7 @@
                     <p class="section-title__tagline section-title__tagline--two"><span>//</span> About The
                         Event</p>
                 </div>
-                <h2 class="section-title__title">Our Creative Event <br><span>Speakers</span></h2>
+                <h2 class="section-title__title">Our Creative Event <br><span>Responsible Personnel</span></h2>
             </div>
             <p class="team-two__text">Whether designing a cozy apartment for a young couple or<br>
                 luxurious penthouse for a discerning client, the goal remains the
@@ -177,11 +177,10 @@
             </p>
         </div>
         <div class="row">
-            <!--Team Two Single Start-->
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                 <div class="team-two__single">
                     <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-1.png')}}" alt="">
+                        <img src="{{asset($admin->photo)}}" alt="">
                     </div>
                     <div class="team-two__social">
                         <a href="#"><span class="fab fa-twitter"></span></a>
@@ -191,19 +190,20 @@
                     </div>
                     <div class="team-two__content">
                         <p class="team-two__sub-title">Ceo Founder</p>
-                        <h3 class="team-two__title"><a href="speaker-single.html">James Smith</a></h3>
+                        <h3 class="team-two__title"><a href="speaker-single.html">{{$admin->name}}</a></h3>
                         <p class="team-two__single-text">This includes websites
                             <br> digital platforms.
                         </p>
                     </div>
                 </div>
             </div>
-            <!--Team Two Single End-->
+
             <!--Team Two Single Start-->
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="300ms">
+            @foreach($employee as $emplo)
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="900ms">
                 <div class="team-two__single">
                     <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-2.png')}}" alt="">
+                        <img src="{{asset($emplo->photo)}}" alt="">
                     </div>
                     <div class="team-two__social">
                         <a href="#"><span class="fab fa-twitter"></span></a>
@@ -212,58 +212,18 @@
                         <a href="#"><span class="fab fa-vimeo-v"></span></a>
                     </div>
                     <div class="team-two__content">
-                        <p class="team-two__sub-title">Ceo Founder</p>
-                        <h3 class="team-two__title"><a href="speaker-single.html">Robert Smith</a></h3>
+                        <p class="team-two__sub-title">{{$emplo->designation}}</p>
+                        <h3 class="team-two__title"><a href="speaker-single.html">{{$emplo->name}}</a></h3>
                         <p class="team-two__single-text">This includes websites
                             <br> digital platforms.
                         </p>
                     </div>
                 </div>
             </div>
+            @endforeach
             <!--Team Two Single End-->
             <!--Team Two Single Start-->
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="600ms">
-                <div class="team-two__single">
-                    <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-3.png')}}" alt="">
-                    </div>
-                    <div class="team-two__social">
-                        <a href="#"><span class="fab fa-twitter"></span></a>
-                        <a href="#" class="team-two__social-two"><span class="fab fa-facebook-f"></span></a>
-                        <a href="#" class="team-two__social-three"><span class="fab fa-instagram"></span></a>
-                        <a href="#"><span class="fab fa-vimeo-v"></span></a>
-                    </div>
-                    <div class="team-two__content">
-                        <p class="team-two__sub-title">Ceo Founder</p>
-                        <h3 class="team-two__title"><a href="speaker-single.html">Michael Smith</a></h3>
-                        <p class="team-two__single-text">This includes websites
-                            <br> digital platforms.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--Team Two Single End-->
-            <!--Team Two Single Start-->
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="900ms">
-                <div class="team-two__single">
-                    <div class="team-two__img">
-                        <img src="{{asset('images/team/team-2-4.png')}}" alt="">
-                    </div>
-                    <div class="team-two__social">
-                        <a href="#"><span class="fab fa-twitter"></span></a>
-                        <a href="#" class="team-two__social-two"><span class="fab fa-facebook-f"></span></a>
-                        <a href="#" class="team-two__social-three"><span class="fab fa-instagram"></span></a>
-                        <a href="#"><span class="fab fa-vimeo-v"></span></a>
-                    </div>
-                    <div class="team-two__content">
-                        <p class="team-two__sub-title">Ceo Founder</p>
-                        <h3 class="team-two__title"><a href="speaker-single.html">William Smith</a></h3>
-                        <p class="team-two__single-text">This includes websites
-                            <br> digital platforms.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
             <!--Team Two Single End-->
         </div>
     </div>
@@ -339,8 +299,11 @@
                     }'>
                 <div class="swiper-wrapper">
                     <!--Testimonial One Single Start-->
+                    @foreach($testimonials as $testimonial)
                     <div class="swiper-slide">
+
                         <div class="testimonial-one__single">
+
                             <div class="testimonial-one__quote">
                                 <span class="icon-quotation"></span>
                             </div>
@@ -351,86 +314,24 @@
                                 <span class="icon-star"></span>
                                 <span class="icon-star"></span>
                             </div>
-                            <p class="testimonial-one__text">There are many variations of passages of
-                                available but the majority have to sufferedes
-                                alteratiosn in some form, by injected hums
-                                randomised words which don't slightly. City
-                                governments have various depar ments
-                                that can handles to forward...</p>
+                            <p class="testimonial-one__text">{{$testimonial->remarks}}</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="{{asset('images/testimonial/testimonial-1-1.jpg')}}" alt="">
+                                    <img src="{{asset($testimonial->attendee->photo)}}" alt="">
                                 </div>
                                 <div class="testimonial-one__client-content">
-                                    <h3><a href="testimonials.html">Thomas Smith</a></h3>
-                                    <p>Visitor Canada</p>
+                                    <h3><a href="#">{{$testimonial->attendee->name}}</a></h3>
+                                    <p>{{$testimonial->attendee->address}}</p>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
+
+                    @endforeach
                     <!--Testimonial One Single End-->
-                    <!--Testimonial One Single Start-->
-                    <div class="swiper-slide">
-                        <div class="testimonial-one__single">
-                            <div class="testimonial-one__quote">
-                                <span class="icon-quotation"></span>
-                            </div>
-                            <div class="testimonial-one__ratting">
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                            </div>
-                            <p class="testimonial-one__text">There are many variations of passages of
-                                available but the majority have to sufferedes
-                                alteratiosn in some form, by injected hums
-                                randomised words which don't slightly. City
-                                governments have various depar ments
-                                that can handles to forward...</p>
-                            <div class="testimonial-one__client-info">
-                                <div class="testimonial-one__client-img">
-                                    <img src="{{asset('images/testimonial/testimonial-1-2.jpg')}}" alt="">
-                                </div>
-                                <div class="testimonial-one__client-content">
-                                    <h3><a href="testimonials.html">Daniel Son </a></h3>
-                                    <p>Visitor Canada</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Testimonial One Single End-->
-                    <!--Testimonial One Single Start-->
-                    <div class="swiper-slide">
-                        <div class="testimonial-one__single">
-                            <div class="testimonial-one__quote">
-                                <span class="icon-quotation"></span>
-                            </div>
-                            <div class="testimonial-one__ratting">
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                            </div>
-                            <p class="testimonial-one__text">There are many variations of passages of
-                                available but the majority have to sufferedes
-                                alteratiosn in some form, by injected hums
-                                randomised words which don't slightly. City
-                                governments have various depar ments
-                                that can handles to forward...</p>
-                            <div class="testimonial-one__client-info">
-                                <div class="testimonial-one__client-img">
-                                    <img src="{{asset('images/testimonial/testimonial-1-3.jpg')}}" alt="">
-                                </div>
-                                <div class="testimonial-one__client-content">
-                                    <h3><a href="testimonials.html">Donald Smith</a></h3>
-                                    <p>Visitor Canada</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Testimonial One Single End-->
+
                 </div>
             </div>
         </div>

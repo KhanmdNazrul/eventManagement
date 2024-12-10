@@ -18,19 +18,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', App\Http\Controllers\frontend\HomeController::class);
-Route::get('/show/{id?}', [App\Http\Controllers\frontend\eventShowController::class, 'show'])->name('show');
+Route::get('/event', [App\Http\Controllers\frontend\eventShowController::class, 'event'])->name('event');
+Route::get('/event_single/{id?}', [App\Http\Controllers\frontend\eventShowController::class, 'show'])->name('event_single');
+Route::get('/speaker/{sid?}', [App\Http\Controllers\frontend\eventShowController::class, 'speaker'])->name('speaker');
+Route::get('/about',[App\Http\Controllers\frontend\eventShowController::class, 'about'])->name('about');
 
-Route::get('/about', function () {
-    return view('frontend.about');
-});
-
-Route::get('/contact', function () {
-    return view('frontend.contact');
-});
-
-Route::get('/event', function () {
-    return view('frontend.events');
-});
+Route::get('/contact', [App\Http\Controllers\frontend\eventShowController::class, 'contact'])->name('contact');
+Route::post('/contact', [App\Http\Controllers\frontend\eventShowController::class, 'store'])->name('contact.store');
 
 
 // Route::get('/', function () {
@@ -74,8 +68,10 @@ Route::middleware('auth:admin')->prefix('admin')->group( function () {
     Route::resource('/event', App\Http\Controllers\backend\EventController::class);
     Route::resource('/speaker', App\Http\Controllers\backend\SpeakerController::class);
     Route::resource('/organiser', App\Http\Controllers\backend\OrganiserController::class);
+    Route::resource('/message', App\Http\Controllers\backend\MessageController::class);
     Route::resource('/events/city', App\Http\Controllers\backend\CityController::class);
     Route::resource('/attendee', App\Http\Controllers\backend\AttendeeController::class);
+    Route::resource('/employee', App\Http\Controllers\backend\EmployeeController::class);
     Route::resource('/events/country', App\Http\Controllers\backend\CountryController::class);
     // Route::resource('/general_admin', App\Http\Controllers\Auth\Admin\RegisterController::class);
     Route::resource('/general_admin', App\Http\Controllers\backend\AdminController::class);

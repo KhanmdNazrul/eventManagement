@@ -80,7 +80,7 @@
                                             <a href="pages-recoverpw.html" class="text-muted"><i class="fa fa-lock mr-1"></i> Forgot your password?</a>
                                         </div>
                                         <div class="text-right">
-                                            <a href="#" class="text-muted">Create an account</a>
+                                            <a href="{{route('attendee.register')}}" class="text-muted">Create an account</a>
                                         </div>
                                     </div>
                                 </div>

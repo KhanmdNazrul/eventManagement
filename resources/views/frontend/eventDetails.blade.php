@@ -112,14 +112,15 @@
                                 <p>Speaker - {{$event->speaker->name}}</p>
                             </li>
                             <li>
-                                <p>Date {{$event->start_date}}</p>
+                                <p>Date - {{$event->start_date}}</p>
                             </li>
                             <li>
                                 <p>Address: {{$event->address}} {{$event->city->name}}</p>
                             </li>
-                        </ul>
+</ul>
                         
                     </div>
+                   
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6">
@@ -145,7 +146,12 @@
                         <p>Ticket Price: <span>{{$event->unit_price}}</span></p>
                     </div>
                 </div><br>
-            <h2>Remainning Tickets </h2>
+            <h2>Remainning Tickets: <span style="color: blue;">{{$total}}</span> </h2><br>
+
+            <div class="events-three__btn-box">
+                                        <a href="{{route('attendee.login')}}" class="about-three__btn thm-btn-two"><span
+                                                class="fas fa-arrow-circle-right"></span>Book Seat</a>
+                                    </div>
 
             </div>
         </div>
@@ -155,6 +161,8 @@
                     <img src="assets/images/team/speaker-single-bottom-img.jpg" alt="">
 
                 </div>
+<!-- booking button -->
+               
                 <div class="speaker-bottom__content">
 
                     <h5 style="color: blue;" class="speaker-bottom__text">

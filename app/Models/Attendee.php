@@ -38,5 +38,9 @@ class Attendee extends Authenticatable
         return $this->hasMany(Booking::class);
     }
 
+    public function testimonial(){
+        return $this->hasMany(Testimonial::class);
+    }
+
 };
 

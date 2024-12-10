@@ -19,6 +19,15 @@
                         <li><a href="{{route('general_admin.index')}}"> <i class="fa fa-angle-double-right"></i> Manage Admin</a></li>
                     </ul>
                 </li>
+
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-star"></i><span> Employee <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <ul class="submenu">
+                        <li><a href="{{route('employee.create')}}"><i class="fa fa-angle-double-right"></i> <span>Add New</span></a></li>
+                        <li><a href="{{route('employee.index')}}"> <i class="fa fa-angle-double-right"></i> Manage Employee</a></li>
+                    </ul>
+                </li>
+
                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users"></i><span> Attendee <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
@@ -116,11 +125,8 @@
                 </li>
 
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-question-circle fa-lg"></i><span>Feedback<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
-                    <ul class="submenu">
-                        <li><a href="{{route('testimonial.create')}}"><i class="fa fa-angle-double-right"></i> Create New</a></li>
-                        <li><a href="{{route('testimonial.index')}}"><i class="fa fa-angle-double-right"></i> Manage feedback</a></li>
-                    </ul>
+                    <a href="{{route('testimonial.index')}}" class="waves-effect"><i class="fa fa-question-circle fa-lg"></i><span>Feedback<span><i class="mdi mdi-chevron-right"></i></span> </span></a>
+    
                 </li>
 
                 <li>
@@ -131,7 +137,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-envelope text-aqua"></i><span> Messages <span class="float-right menu-arrow"></a>
+                    <a href="{{route('message.index')}}" class="waves-effect"><i class="fa fa-envelope text-aqua"></i><span> Messages <span class="float-right menu-arrow"></a>
                 </li>
 
                 <li>
