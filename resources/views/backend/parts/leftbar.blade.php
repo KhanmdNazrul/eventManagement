@@ -109,10 +109,10 @@
                 </li>
 
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-newspaper"></i><span> News <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-newspaper"></i><span> Blogs <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Add News</a></li>
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Manage News</a></li>
+                        <li><a href="{{route('blog.create')}}"><i class="fa fa-angle-double-right"></i> Add Blog</a></li>
+                        <li><a href="{{route('blog.index')}}"><i class="fa fa-angle-double-right"></i> Manage Blogs</a></li>
 
                     </ul>
                 </li>
@@ -138,10 +138,6 @@
                 </li>
                 <li>
                     <a href="{{route('message.index')}}" class="waves-effect"><i class="fa fa-envelope text-aqua"></i><span> Messages <span class="float-right menu-arrow"></a>
-                </li>
-
-                <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-cogs"></i><span> Site Setting <span class="float-right menu-arrow"></span> </span></a>
                 </li>
             </ul>
 

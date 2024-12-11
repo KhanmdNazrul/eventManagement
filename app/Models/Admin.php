@@ -31,4 +31,8 @@ class Admin extends Authenticatable
     protected $casts = [
         'password' => 'hashed',
     ];
+
+    public function blog(){
+        return $this->hasMany(Blog::class);
+    }
 }

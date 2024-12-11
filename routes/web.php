@@ -63,7 +63,7 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
     Route::resource('/booking', App\Http\Controllers\backend\BookingController::class);
     Route::get('/booking/status/{id}', [BookingController::class, 'changeStatus'])->name('changeStatus');
-
+    Route::resource('/blog', App\Http\Controllers\backend\BlogController::class);
     Route::resource('/testimonial', App\Http\Controllers\backend\TestimonialController::class);
     Route::resource('/event', App\Http\Controllers\backend\EventController::class);
     Route::resource('/speaker', App\Http\Controllers\backend\SpeakerController::class);
