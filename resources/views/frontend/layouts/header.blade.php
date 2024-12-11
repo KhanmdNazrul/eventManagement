@@ -83,12 +83,8 @@
                                         </ul>
                                     </li>
                                    
-                                    <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="{{route('blog')}}">Blog</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/contact')}}">Contact</a>

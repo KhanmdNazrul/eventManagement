@@ -22,6 +22,8 @@ Route::get('/event', [App\Http\Controllers\frontend\eventShowController::class, 
 Route::get('/event_single/{id?}', [App\Http\Controllers\frontend\eventShowController::class, 'show'])->name('event_single');
 Route::get('/speaker/{sid?}', [App\Http\Controllers\frontend\eventShowController::class, 'speaker'])->name('speaker');
 Route::get('/about',[App\Http\Controllers\frontend\eventShowController::class, 'about'])->name('about');
+Route::get('/blog', [App\Http\Controllers\frontend\BlogController::class, 'blog'])->name('blog');
+Route::get('/blog_details/{id?}', [App\Http\Controllers\frontend\BlogController::class, 'blog_details'])->name('blog.details');
 
 Route::get('/contact', [App\Http\Controllers\frontend\eventShowController::class, 'contact'])->name('contact');
 Route::post('/contact', [App\Http\Controllers\frontend\eventShowController::class, 'store'])->name('contact.store');
