@@ -10,8 +10,10 @@ class Testimonial extends Model
     use HasFactory;
     protected $fillable = [
         'attendee_id',
-        'subject',
-        'remarks',
+        'designation',
+        'company',
+        'subjects',
+        'feedback',
     ];
 
     public function attendee(){

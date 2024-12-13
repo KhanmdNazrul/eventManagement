@@ -5,26 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Booking extends Model
+class Comment extends Model
 {
     use HasFactory;
     protected $fillable = [
         'attendee_id',
-        'event_id',
-        'num_tickets'
+       'blog_id',
+       'content'
     ];
-
 
     public function attendee(){
         return $this->belongsTo(Attendee::class);
     }
 
-    public function event(){
-        return $this->belongsTo(Event::class);
-    }
-
-    public function booking(){
-        return $this->hasMany(Payment::class);
+    public function blog(){
+        return $this->belongsTo(Blog::class);
     }
 
 }

@@ -18,22 +18,26 @@
 
 @section('js')
 
- <!-- jQuery  -->
- <script src="{{asset('js/jquery.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('js/metismenu.min.js')}}"></script>
-    <script src="{{asset('js/jquery.slimscroll.js')}}"></script>
-    <script src="{{asset('js/waves.min.js')}}"></script>
-    <script src="{{asset('plugins/apexchart/apexcharts.min.js')}}"></script>
-    <script src="{{asset('plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
-    <!--Morris Chart-->
-    <script src="{{asset('plugins/morris/morris.min.js')}}"></script>
-    <script src="{{asset('plugins/raphael/raphael.min.js')}}"></script>
-    <script src="{{asset('pages/dashboard.init.js')}}"></script>
-    <!-- App js -->
-    <script src="{{asset('js/app.js')}}"></script>
+<!-- jQuery  -->
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('js/metismenu.min.js')}}"></script>
+<script src="{{asset('js/jquery.slimscroll.js')}}"></script>
+<script src="{{asset('js/waves.min.js')}}"></script>
+<script src="{{asset('plugins/apexchart/apexcharts.min.js')}}"></script>
+<script src="{{asset('plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+<!--Morris Chart-->
+<script src="{{asset('plugins/morris/morris.min.js')}}"></script>
+<script src="{{asset('plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{asset('pages/dashboard.init.js')}}"></script>
+<!-- App js -->
+<script src="{{asset('js/app.js')}}"></script>
 
 @endsection
+
+@php
+$blogs = App\Models\Blog::orderBy('id')->limit(4)->get();
+@endphp
 
 <div class="content">
     <div class="container-fluid">
@@ -58,7 +62,7 @@
             </div>
         </div>
         <!-- end page-title -->
-      
+
         <!-- start top-Content -->
         <div class="row">
             <div class="col-sm-6 col-xl-3">
@@ -67,7 +71,11 @@
                         <div class="row align-items-center p-1">
                             <div class="col-lg-6">
                                 <h5 class="font-16">Total Expenses</h5>
-                                <h4 class="text-info pt-1 mb-0">$67,670</h4>
+                                @foreach($blogs as $blog)
+                               
+                              
+                                <h4 class="text-info pt-1 mb-0">{{$blog->title}}</h4>
+                                @endforeach
                             </div>
                             <div class="col-lg-6">
                                 <div id="chart1"></div>
@@ -138,7 +146,7 @@
                                 <p class="text-muted">Marketplace</p>
                             </li>
                             <li class="list-inline-item">
-                                <h5>954</h5>
+                                <h5></h5>
                                 <p class="text-muted">Last week</p>
                             </li>
                             <li class="list-inline-item">

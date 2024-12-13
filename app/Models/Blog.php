@@ -19,4 +19,7 @@ class Blog extends Model
         return $this->belongsTo(Admin::class);
     }
 
+    public function comment(){
+        return $this->hasMany(Comment::class);
+    }
 }

@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+
+use GdImage;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -40,6 +42,15 @@ class Attendee extends Authenticatable
 
     public function testimonial(){
         return $this->hasMany(Testimonial::class);
+    }
+
+    
+    public function comment(){
+        return $this->hasMany(Comment::class);
+    }
+
+    public function gallrey(){
+        return $this->hasMany(Gallery::class);
     }
 
 };

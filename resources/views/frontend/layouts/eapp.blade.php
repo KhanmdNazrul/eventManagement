@@ -53,7 +53,7 @@
     <!-- /.preloader -->
     <div class="page-wrapper">
 
-        @include('frontend.layouts.header')
+        @include('frontend.layouts.attendee_header')
         
         <div class="stricky-header stricked-menu main-menu main-menu-three">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->

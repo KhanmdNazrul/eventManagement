@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->integer('attendee_id');
-            $table->integer('event_id');
+            $table->integer('blog_id');
             $table->string('content');
+            $table->date('date');
             $table->timestamps();
         });
     }

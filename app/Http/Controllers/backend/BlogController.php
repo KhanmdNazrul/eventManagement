@@ -4,6 +4,8 @@ namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
+use App\Models\Comment;
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -121,6 +123,34 @@ class BlogController extends Controller
     {
         $blog->delete();
         return redirect()->route('blog.index')->with('msg', 'Blog Deleted Successfully');
+
+    }
+
+    public function comment()
+    {
+        $comments = Comment::orderBy('id', 'desc')->get();
+        return view('backend.blogs.comment', compact('comments'));
+    }
+
+    public function destro($did)
+    {
+        $comments = Comment::find($did)->get();
+        $comments->delete();
+        return redirect()->route('comment')->with('msg', 'comment Deleted Successfully');
+
+    }
+
+    public function gallery()
+    {
+        $galleries = Gallery::orderBy('id', 'desc')->get();
+        return view('backend.gallery.gallery', compact('galleries'));
+    }
+
+    public function dest($gid)
+    {
+        $comments = Gallery::find($gid)->get();
+        $comments->delete();
+        return redirect()->route('gallery')->with('msg', 'Photo Deleted Successfully');
 
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\frontend;
+namespace App\Http\Controllers\backend\attendee;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
@@ -12,21 +12,14 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    public function dash()
     {
+        $nazrul = 'I am The King';
         $galleries = Gallery::orderBy('id')->limit(6)->get();
         $speakers = Speaker::orderBy('id')->limit(3)->get();
         $events = Event::OrderBy('id', 'desc')->limit(3)->get();
         $feedbacks = Testimonial::orderBy('id', 'desc')->get();
         $blogs = Blog::orderBy('id')->limit(4)->get();
-        return view('frontend.home',compact('speakers','events','galleries','feedbacks','blogs'));
+        return view('backend.attedee_dashboard');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-   
 }

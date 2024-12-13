@@ -23,7 +23,9 @@ Route::get('/event_single/{id?}', [App\Http\Controllers\frontend\eventShowContro
 Route::get('/speaker/{sid?}', [App\Http\Controllers\frontend\eventShowController::class, 'speaker'])->name('speaker');
 Route::get('/about',[App\Http\Controllers\frontend\eventShowController::class, 'about'])->name('about');
 Route::get('/blog', [App\Http\Controllers\frontend\BlogController::class, 'blog'])->name('blog');
-Route::get('/blog_details/{id?}', [App\Http\Controllers\frontend\BlogController::class, 'blog_details'])->name('blog.details');
+Route::get('/blog_details/{bid?}', [App\Http\Controllers\frontend\BlogController::class, 'blog_details'])->name('bdetails');
+Route::get('gallery', [App\Http\Controllers\frontend\BlogController::class, 'gallery'])->name('fgallery');
+
 
 Route::get('/contact', [App\Http\Controllers\frontend\eventShowController::class, 'contact'])->name('contact');
 Route::post('/contact', [App\Http\Controllers\frontend\eventShowController::class, 'store'])->name('contact.store');
@@ -63,9 +65,14 @@ Route::middleware('guest:admin')->prefix('admin')->group( function () {
 });
 
 Route::middleware('auth:admin')->prefix('admin')->group( function () {
+    Route::resource('/payment', App\Http\Controllers\backend\PaymentController::class);
     Route::resource('/booking', App\Http\Controllers\backend\BookingController::class);
     Route::get('/booking/status/{id}', [BookingController::class, 'changeStatus'])->name('changeStatus');
     Route::resource('/blog', App\Http\Controllers\backend\BlogController::class);
+    Route::get('/comment', [App\Http\Controllers\backend\BlogController::class, 'comment'])->name('comment');
+    Route::post('/comment/{did}', [App\Http\Controllers\backend\BlogController::class, 'destro'])->name('destro');
+    Route::get('/gallery', [App\Http\Controllers\backend\BlogController::class, 'gallery'])->name('gallery');
+    Route::post('/gallery/{gid}', [App\Http\Controllers\backend\BlogController::class, 'dest'])->name('dest');
     Route::resource('/testimonial', App\Http\Controllers\backend\TestimonialController::class);
     Route::resource('/event', App\Http\Controllers\backend\EventController::class);
     Route::resource('/speaker', App\Http\Controllers\backend\SpeakerController::class);
@@ -100,6 +107,5 @@ Route::middleware('auth:attendee')->prefix('attendee')->group( function () {
 
     Route::post('logout', [App\Http\Controllers\Auth\Attendee\LoginController::class, 'destroy'])->name('attendee.logout');
 
-    Route::view('/dashboard','backend.attendee_dashboard');
-
+    Route::view('/dashboard', [App\Http\Controllers\backend\attendee\HomeController::class,'dash']);
 });

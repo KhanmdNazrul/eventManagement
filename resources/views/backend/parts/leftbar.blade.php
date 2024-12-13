@@ -101,7 +101,7 @@
                 </li>
 
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-file-invoice-dollar"></i><span> payments <span class="float-right menu-arrow"></a>
+                    <a href="{{route('payment.index')}}" class="waves-effect"><i class="fas fa-file-invoice-dollar"></i><span> payments <span class="float-right menu-arrow"></a>
                 </li>
 
                 <li>
@@ -120,13 +120,21 @@
                 <li>
                     <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-comment"></i><span> Comments<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                     <ul class="submenu">
-                        <li><a href=""><i class="fa fa-angle-double-right"></i> Manage comments</a></li>
+                        <li><a href="{{route('comment')}}"><i class="fa fa-angle-double-right"></i> Manage comments</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="{{route('testimonial.index')}}" class="waves-effect"><i class="fa fa-question-circle fa-lg"></i><span>Feedback<span><i class="mdi mdi-chevron-right"></i></span> </span></a>
     
+                </li>
+
+                
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-comment"></i><span> Gallery<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <ul class="submenu">
+                        <li><a href="{{route('gallery')}}"><i class="fa fa-angle-double-right"></i> Manage Gallery</a></li>
+                    </ul>
                 </li>
 
                 <li>

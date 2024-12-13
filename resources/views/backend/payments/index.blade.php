@@ -55,7 +55,7 @@
                             <li class="breadcrumb-item">
                                 <a href="javascript:void(0);">Tables</a>
                             </li>
-                            <li class="breadcrumb-item active">Testimonials Table</li>
+                            <li class="breadcrumb-item active">Payments Table</li>
                         </ol>
 
 
@@ -80,39 +80,37 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="mt-0 header-title">Feedback List</h4>
-                        <p class="sub-title">Here are the Feedback of our supportive companies. </p>
+                        <h4 class="mt-0 header-title">All Payments</h4>
+                        <p class="sub-title">Here are the Payments of our Events. </p>
 
                         <div class="table-rep-plugin">
                             <div class="table-responsive b-0" data-pattern="priority-columns">
-                            <div class="float-right"><a href="{{route('testimonial.create')}}"><button class="btn btn-success">Add New</button></a></div>
+                            <div class="float-right"><a href="#"><button class="btn btn-success">Add New</button></a></div>
 
                                 <table id="tech-companies-1" class="table  table-striped">
                                     <thead>
                                         <tr>
                                             <th>SN</th>
-                                            <th data-priority="1">Name</th>
-                                            <th data-priority="3">Photo</th>
-                                            <th data-priority="1">Subject</th>
+                                            <th data-priority="1">Booked by</th>
+                                            <th data-priority="3">Transaction No</th>
+                                            <th data-priority="1">Amount</th>
                                            
-                                            <th data-priority="2">Remarks</th>
+                                            <th data-priority="2">Method</th>
                                             <th data-priority="1" style="width:230px">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($testimonials as $testimonial)
+                                        @foreach($items as $item)
 
                                         <tr>
                                             <th>{{$loop->iteration}}</th>
-                                            <td>{{$testimonial->attendee->name}}</td>
-                                            <td><img src="{{asset($testimonial->attendee->photo)}}" width="100px" alt=""></td>
-
-                                            <td>{{$testimonial->subjects}}</td>
-                                           
-                                            <td>{{$testimonial->feedback}}</td>
+                                            <td>{{$item->booking->attendee->name}}</td>
+                                            <td>{{$item->trxn_no}}</td>
+                                            <td>{{$item->amount}}</td>
+                                            <td>{{$item->method}}</td>
                                             <td>
 
-                                                <form action="{{route('testimonial.destroy', $testimonial->id)}}" method="post">
+                                                <form action="{{route('payment.destroy', $item->id)}}" method="post">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger">Delete</button>

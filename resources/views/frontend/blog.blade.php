@@ -18,12 +18,12 @@
 
     <div class="container">
         <div class="page-header__inner">
-            <h2>Contact Us</h2>
+   
             <div class="thm-breadcrumb__box">
                 <ul class="thm-breadcrumb list-unstyled">
                     <li><a href="index.html">Home</a></li>
                     <li><span>-</span></li>
-                    <li>Contact Us</li>
+                    <li>Blog</li>
                 </ul>
             </div>
         </div>
@@ -67,42 +67,20 @@
                             <div class="sidebar__single sidebar__post">
                                 <h3 class="sidebar__title">Recent Post</h3>
                                 <ul class="sidebar__post-list list-unstyled">
+                                    @foreach($blogs as $blog)
                                     <li>
                                         <div class="sidebar__post-image">
-                                            <img src="assets/images/blog/lp-1-1.jpg" alt="">
+                                            <img src="{{asset($blog->photo)}}" alt="">
                                         </div>
                                         <div class="sidebar__post-content">
                                             <h3>
-                                                <a href="blog-details.html">If there were any standout speakers
-                                                    at the conference</a>
+                                                <a href="{{route('bdetails', $blog->id)}}">{{$blog->title}}</a>
                                             </h3>
-                                            <span class="sidebar__post-content-date">24 Mach 2024</span>
+                                            <span class="sidebar__post-content-date">{{$blog->title}}</span>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="sidebar__post-image">
-                                            <img src="assets/images/blog/lp-1-2.jpg" alt="">
-                                        </div>
-                                        <div class="sidebar__post-content">
-                                            <h3>
-                                                <a href="blog-details.html">Provide brief profiles of these
-                                                    speakers and summarize</a>
-                                            </h3>
-                                            <span class="sidebar__post-content-date">24 Mach 2024</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__post-image">
-                                            <img src="assets/images/blog/lp-1-2.jpg" alt="">
-                                        </div>
-                                        <div class="sidebar__post-content">
-                                            <h3>
-                                                <a href="blog-details.html">Share your own reflections and
-                                                    insights from attending</a>
-                                            </h3>
-                                            <span class="sidebar__post-content-date">24 Mach 2024</span>
-                                        </div>
-                                    </li>
+                                    @endforeach
+                                  
                                 </ul>
                             </div>
                             <div class="sidebar__single sidebar__tags">
@@ -149,7 +127,7 @@
                                             <div class="icon">
                                                 <span class="fas fa-comments"></span>
                                             </div>
-                                            <a href="#">0 Comment</a>
+                                            <a href="#">{{$total}} Comment</a>
                                         </li>
                                         <li>
                                             <div class="icon">
@@ -158,10 +136,10 @@
                                             <a href="#">0 Like</a>
                                         </li>
                                     </ul>
-                                    <h3 class="blog-page__title"><a href="">{{$blog->title}}</a></h3>
+                                    <h3 class="blog-page__title"><a href="{{route('bdetails', $blog->id)}}">{{$blog->title}}</a></h3>
                                     <p class="blog-page__text-1">{{$blog->details}}</p>
                                     <div class="blog-page__btn-box">
-                                        <a href="{{route('blog.details', $blog->id)}}" class="blog-page__btn">Read More</a>
+                                        <a href="{{route('bdetails', $blog->id)}}" class="blog-page__btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +151,7 @@
                                     <li class="count"><a href="blog-details.html">2</a></li>
                                     <li class="count"><a href="blog-details.html">3</a></li>
                                     <li class="next">
-                                        <a href="blog-details.html" aria-label="Next"><i
+                                        <a href="#" aria-label="Next"><i
                                                 class="icon-right-arrows"></i></a>
                                     </li>
                                 </ul>
