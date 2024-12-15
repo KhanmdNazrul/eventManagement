@@ -107,5 +107,7 @@ Route::middleware('auth:attendee')->prefix('attendee')->group( function () {
 
     Route::post('logout', [App\Http\Controllers\Auth\Attendee\LoginController::class, 'destroy'])->name('attendee.logout');
 
-    Route::view('/dashboard', [App\Http\Controllers\backend\attendee\HomeController::class,'dash']);
+    Route::get('/dashboard', [App\Http\Controllers\backend\attendee\HomeController::class,'dash'])->name('homen');
+    Route::get('/event', [App\Http\Controllers\backend\attendee\EventShowController::class, 'event'])->name('nevent');
+
 });

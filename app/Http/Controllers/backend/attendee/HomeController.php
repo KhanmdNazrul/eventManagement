@@ -20,6 +20,6 @@ class HomeController extends Controller
         $events = Event::OrderBy('id', 'desc')->limit(3)->get();
         $feedbacks = Testimonial::orderBy('id', 'desc')->get();
         $blogs = Blog::orderBy('id')->limit(4)->get();
-        return view('backend.attedee_dashboard');
+        return view('backend.attendee_dashboardn', compact('galleries','speakers','events','feedbacks','blogs'));
     }
 }

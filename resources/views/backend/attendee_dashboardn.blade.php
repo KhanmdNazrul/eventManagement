@@ -1,14 +1,6 @@
 @extends('frontend.layouts.eapp')
 @section('content')
 <!--Main Slider Start-->
-
-@php
-$events = App\Models\Event::OrderBy('id','desc')->limit(3)->get();
-$blogs = App\Models\Blog::orderBy('id')->limit(4)->get();
-$speakers = App\Models\Speaker::orderBy('id')->limit(3)->get();
-$feedbacks = App\Models\Testimonial::orderBy('id','desc')->get();
-$galleries = App\Models\Gallery::orderBy('id')->limit(6)->get();
-@endphp
 <section class="main-slider-three">
     <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
                 "effect": "fade",
