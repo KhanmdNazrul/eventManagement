@@ -65,4 +65,5 @@ class PaymentController extends Controller
         $payment->delete();
         return redirect()->route('payment.index')->with('msg', 'Payment info. Deleted Successfully');
     }
+
 }

@@ -350,7 +350,7 @@
                                         </div>
                                     </div>
                                     <div class="events-three__btn-box">
-                                        <a href="{{route('show',$event->id)}}" class="about-three__btn thm-btn-two"><span
+                                        <a href="{{route('event_singlen',$event->id)}}" class="about-three__btn thm-btn-two"><span
                                                 class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
                                     </div>
                                 </div>
@@ -467,7 +467,7 @@
                                 </div>
                                 <div class="team-three__content">
                                     <p class="team-three__sub-title">{{$speaker->profession}}</p>
-                                    <h4 class="team-three__title"><a href="{{route('speaker',$speaker->id)}}">{{$speaker->name}}</a>
+                                    <h4 class="team-three__title"><a href="{{route('speakern',$speaker->id)}}">{{$speaker->name}}</a>
                                     </h4>
                                 </div>
                             </div>
@@ -669,7 +669,7 @@
                     <h2 class="section-title__title">Our Greatest Event <br> <span>Showcase</span></h2>
                 </div>
                 <div class="gallery-two__btn-box">
-                    <a href="{{route('fgallery')}}" class="gallery-two__btn thm-btn-two"><span
+                    <a href="{{route('galleryn')}}" class="gallery-two__btn thm-btn-two"><span
                             class="fas fa-arrow-circle-right"></span>View All Gallery</a>
                 </div>
             </div>
@@ -956,7 +956,7 @@
                             <div class="blog-three__tag-border"></div>
                         </div>
                     </div>
-                    <h3 class="blog-three__title"><a href="{{route('bdetails',$blog->id)}}">{{$blog->title}}</a></h3>
+                    <h3 class="blog-three__title"><a href="{{route('blogdetailsn',$blog->id)}}">{{$blog->title}}</a></h3>
                 </div>
             </div>
             @endforeach

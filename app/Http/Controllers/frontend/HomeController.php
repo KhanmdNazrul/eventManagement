@@ -9,6 +9,7 @@ use App\Models\Gallery;
 use App\Models\Speaker;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class HomeController extends Controller
 {
@@ -17,12 +18,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $galleries = Gallery::orderBy('id')->limit(6)->get();
-        $speakers = Speaker::orderBy('id')->limit(3)->get();
-        $events = Event::OrderBy('id', 'desc')->limit(3)->get();
-        $feedbacks = Testimonial::orderBy('id', 'desc')->get();
-        $blogs = Blog::orderBy('id')->limit(4)->get();
-        return view('frontend.home',compact('speakers','events','galleries','feedbacks','blogs'));
+        // $galleries = Gallery::orderBy('id')->limit(6)->get();
+        // $speakers = Speaker::orderBy('id')->limit(3)->get();
+        // $events = Event::OrderBy('id', 'desc')->limit(3)->get();
+        // $feedbacks = Testimonial::orderBy('id', 'desc')->get();
+        // $blogs = Blog::orderBy('id')->limit(4)->get();
+        // return view('frontend.home',compact('speakers','events','galleries','feedbacks','blogs'));
+        return Inertia::render('Home');
     }
 
     /**

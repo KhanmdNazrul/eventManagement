@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 
 class EventShowController extends Controller
 {
-    public function show($id)
+    public function shown($id)
     {
       $event = Event::find($id);
   
@@ -22,22 +22,22 @@ class EventShowController extends Controller
       $booked = $stickets->sum('num_tickets');
       $beginning = $event->num_tickets;
       $total = $beginning - $booked;
-      return view('frontend.eventDetails', compact('event', 'total'));
+      return view('backend.eventdetailsn', compact('event', 'total'));
     }
   
-    public function speaker($sid)
+    public function speakern($sidn)
     {
-      $speaker = Speaker::find($sid);
-      return view('frontend.speaker', compact('speaker'));
+      $speaker = Speaker::find($sidn);
+      return view('backend.speakern', compact('speaker'));
     }
   
-    public function event()
+    public function eventn()
     {
       $nazruls = Event::OrderBy('id', 'desc')->get();
-      return view('frontend.events', compact('nazruls'));
+      return view('backend.eventsn', compact('nazruls'));
     }
   
-    public function about()
+    public function aboutn()
     {
       $admins = Admin::all();
       foreach($admins as $admin){
@@ -45,15 +45,15 @@ class EventShowController extends Controller
       }
       $testimonials = Testimonial::all();
       $employee = Employee::OrderBy('id', 'desc')->get();
-      return view('frontend.about', compact('employee', 'admin','testimonials'));
+      return view('backend.aboutn', compact('employee', 'admin','testimonials'));
     }
   
-    public function contact()
+    public function contactn()
     {
-      return view('frontend.contact');
+      return view('backend.contactn');
     }
   
-    public function store(Request $request)
+    public function nstore(Request $request)
     {
       
       $request->validate([
@@ -61,7 +61,6 @@ class EventShowController extends Controller
         'email' => 'required',
         'phone' => 'required',
         'message' => 'required',
-       
     ]);
   
     $message = new Message;
@@ -73,7 +72,7 @@ class EventShowController extends Controller
   
     $message->save();
   
-    return redirect()->route('contact')->with('msg', "Successfully sent your message");
+    return redirect()->route('acontact')->with('msg', "Successfully sent your message");
     }
     
 }

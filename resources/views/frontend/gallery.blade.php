@@ -19,7 +19,7 @@
         <div class="page-header__inner">
             <div class="thm-breadcrumb__box">
                 <ul class="thm-breadcrumb list-unstyled">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{route('home')}}">Home</a></li>
                     <li><span>-</span></li>
                     <li>Gallery</li>
                 </ul>
@@ -39,7 +39,7 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="gallery-two__single">
                         <div class="gallery-two__img">
-                            <img src="{{asset($gallery->photo)}}" alt="">
+                            <img src="{{asset($gallery->photo)}}" height="300px" width="300px" alt="">
                             <div class="gallery-two__content">
                                 <div class="gallery-two__content-shape-1"
                                     style="background-image: url(images/shapes/gallery-two-content-shape-1.png);">
@@ -59,7 +59,6 @@
                 </div>
                 @endforeach
                 <!--Project Three Single End-->
-
             </div>
         </div>
     </div>

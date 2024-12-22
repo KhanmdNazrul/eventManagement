@@ -1,118 +1,110 @@
 <header class="main-header-three">
-            <div class="main-header-three__top">
-                <div class="main-header-three__top-inner">
-                    <ul class="list-unstyled main-header-three__contact-list">
-                        <li>
-                            <div class="icon">
-                                <i class="icon-email"></i>
-                            </div>
-                            <div class="text">
-                                <p><a href="mailto:needhelp@company.com">eventeesupreme@gmail.com</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="icon-pin"></i>
-                            </div>
-                            <div class="text">
-                                <p>80 Kakrail, Dhaka</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="icon-phone-call"></i>
-                            </div>
-                            <div class="text">
-                                <p><a href="tel:0012346823705">+880 1845207869</a></p>
-                            </div>
-                        </li>
+    <div class="main-header-three__top">
+        <div class="main-header-three__top-inner">
+            <ul class="list-unstyled main-header-three__contact-list">
+                <li>
+                    <div class="icon">
+                        <i class="icon-email"></i>
+                    </div>
+                    <div class="text">
+                        <p><a href="mailto:needhelp@company.com">eventeesupreme@gmail.com</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="icon-pin"></i>
+                    </div>
+                    <div class="text">
+                        <p>80 Kakrail, Dhaka</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="icon-phone-call"></i>
+                    </div>
+                    <div class="text">
+                        <p><a href="tel:0012346823705">+880 1845207869</a></p>
+                    </div>
+                </li>
+            </ul>
+            <div class="main-header-three__social-and-top-menu">
+                <div class="main-header-three__social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fas fa-wifi"></i></a>
+                </div>
+                <div class="main-header-three__top-menu">
+                    <ul class="main-header-three__top-menu-list list-unstyled">
+                        <li><a href="{{route('galleryn')}}">Gallery</a></li>
+                        <li><a href="{{route('mytransaction')}}">My Transactions</a></li>
+                        <li><a href="{{route('mybooking')}}">My Booking</a></li>
+                        <li><div>
+                            <form method="post" action="{{route('attendee.logout')}}">
+                                @csrf
+                                <a class="dropdown-item" href="{{route('attendee.logout')}}"
+                                    onclick="event.preventDefault();
+                                        this.closest('form').submit();">Log Out</a>
+                            </form>
+                        </div></li>
                     </ul>
-                    <div class="main-header-three__social-and-top-menu">
-                        <div class="main-header-three__social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            <a href="#"><i class="fas fa-wifi"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu main-menu-three">
+        <div class="main-menu-three__wrapper">
+            <div class="main-menu-three__wrapper-inner">
+                <div class="main-menu-three__left">
+                    <div class="main-menu-three__logo">
+                        <a href="index.html"><img src="{{asset('images/resources/logo-3.png')}}" alt=""></a>
+                    </div>
+                    <div class="main-menu-three__main-menu-box">
+                        <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                        <ul class="main-menu__list">
+                            <li>
+                                <a href="{{route('homen')}}">Home</a>
+                            </li>
+                            <li>
+                                <a href="{{route('aboutn')}}">About</a>
+                            </li>
+
+                            <li>
+                                <a href="{{route('eventn')}}">Events</a>
+                            </li>
+                           
+                            <li>
+                                <a href="{{route('blogn')}}">Blog</a>
+                            </li>
+                            <li>
+                                <a href="{{url('/attendee/contactn')}}">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-menu-three__right">
+                    <div class="main-menu-three__login-box">
+                        <div class="">
+                            <h5 style="color: white">{{Auth()->guard()->user()->name}}</h5>
                         </div>
-                        <div class="main-header-three__top-menu">
-                            <ul class="main-header-three__top-menu-list list-unstyled">
-                                <li><a href="faq.html">Our Faqs</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
+                        <div class="icon">
+                            <img src="{{asset(Auth()->guard()->user()->photo)}}" height="70" width="70" alt="">
                         </div>
+                   
+                        <div class="select-box">
+                            <select class="wide">
+                                <option data-display="My Menus">Select Option</option>
+                                <option value="1"><a href="">my Booking</a></option>
+                                <option value="1"><a href="">Saved Events</a></option>
+                                <option value="1"><a href="">My transactions</a></option>
+                            </select>
+                        </div>
+
+                       
                     </div>
                 </div>
             </div>
-            <nav class="main-menu main-menu-three">
-                <div class="main-menu-three__wrapper">
-                    <div class="main-menu-three__wrapper-inner">
-                        <div class="main-menu-three__left">
-                            <div class="main-menu-three__logo">
-                                <a href="index.html"><img src="{{asset('images/resources/logo-3.png')}}" alt=""></a>
-                            </div>
-                            <div class="main-menu-three__main-menu-box">
-                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                <ul class="main-menu__list">
-                                <li>
-                                        <a href="{{url('/')}}">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{url('/about')}}">About</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{url('/event')}}">Events</a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="speaker.html">Speaker</a></li>
-                                            <li><a href="archives-speakers.html">Archives Speakers</a></li>
-                                            <li><a href="speaker-single.html">Speaker Single</a></li>
-                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="venue.html">Venue</a></li>
-                                            <li><a href="sponsors.html">Sponsors</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="404.html">404 Error</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
-                                    </li>
-                                   
-                                    <li>
-                                        <a href="{{route('blog')}}">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{url('/contact')}}">Nazrul</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main-menu-three__right">
-                            <div class="main-menu-three__login-box">
-                                <div class="icon">
-                                    <img src="{{Auth()->guard()->user()->photo}}" alt="">
-                                </div>
-                                <div class="select-box">
-                                    <select class="wide">
-                                        <option data-display="Join With Us">Join With Us</option>
-                                        <option value="1">Login</option>
-                                        <option value="2">Register</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="main-menu-three__search-box">
-                                <a href="#" class="main-menu-three__search search-toggler">
-                                    <span class="icon-loupe"></span>
-                                    <p class="main-menu-three__search-text">Search here ..</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        </div>
+    </nav>
+</header>

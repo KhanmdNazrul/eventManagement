@@ -91,7 +91,6 @@ class AttendeeController extends Controller
             'phone'=> 'required',
             'address'=> 'required',
             'photo'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'email' => 'required|string|lowercase|email|max:255|unique:' . Attendee::class,
             
         ]);
         
@@ -103,13 +102,13 @@ class AttendeeController extends Controller
         }else{
             $photo= 'images/nophoto.jpg';
         }
+
         $attendee = Attendee::find($id);
         
         $attendee->name = $request->name;
         $attendee->phone= $request->phone;  
         $attendee->address= $request->address;
         $attendee->photo = $photo;
-        $attendee->email = $request->email;
         $attendee->update();
 
         return redirect()->route('attendee.index')->with('msg', 'Attendee Updated Successfully');

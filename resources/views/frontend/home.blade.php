@@ -350,7 +350,7 @@
                                         </div>
                                     </div>
                                     <div class="events-three__btn-box">
-                                        <a href="{{route('show',$event->id)}}" class="about-three__btn thm-btn-two"><span
+                                        <a href="{{route('event_single',$event->id)}}" class="about-three__btn thm-btn-two"><span
                                                 class="fas fa-arrow-circle-right"></span>Buy Ticket</a>
                                     </div>
                                 </div>

@@ -104,7 +104,7 @@
 
                                         <tr>
                                             <th>{{$loop->iteration}}</th>
-                                            <td>{{$item->booking->attendee->name}}</td>
+                                            <td>{{ $item->booking && $item->booking->attendee ? $item->booking->attendee->name : 'No Attendee' }}</td>
                                             <td>{{$item->trxn_no}}</td>
                                             <td>{{$item->amount}}</td>
                                             <td>{{$item->method}}</td>
@@ -113,6 +113,7 @@
                                                 <form action="{{route('payment.destroy', $item->id)}}" method="post">
                                                     @csrf
                                                     @method('DELETE')
+                                                    <a class="btn btn-info" href="{{route('invoice',$item->id)}}">Print</a>
                                                     <button type="submit" class="btn btn-danger">Delete</button>
                                                 </form>
 

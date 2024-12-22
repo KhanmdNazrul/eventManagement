@@ -23,7 +23,7 @@ class Booking extends Model
         return $this->belongsTo(Event::class);
     }
 
-    public function booking(){
+    public function payment(){
         return $this->hasMany(Payment::class);
     }
 

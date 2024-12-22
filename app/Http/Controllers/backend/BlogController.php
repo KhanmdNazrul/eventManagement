@@ -108,11 +108,7 @@ class BlogController extends Controller
         $blog->photo = $photo;
         $blog->date = $request->date;
         $blog->details = $request->details;
-       
-      
         $blog->update();
-
-
       return redirect()->route('blog.index')->with('msg', 'Blog Updated Successfully');
     }
 
@@ -132,13 +128,7 @@ class BlogController extends Controller
         return view('backend.blogs.comment', compact('comments'));
     }
 
-    public function destro($did)
-    {
-        $comments = Comment::find($did)->get();
-        $comments->delete();
-        return redirect()->route('comment')->with('msg', 'comment Deleted Successfully');
-
-    }
+   
 
     public function gallery()
     {
@@ -148,8 +138,8 @@ class BlogController extends Controller
 
     public function dest($gid)
     {
-        $comments = Gallery::find($gid)->get();
-        $comments->delete();
+        $comm = Gallery::find($gid);
+        $comm->delete();
         return redirect()->route('gallery')->with('msg', 'Photo Deleted Successfully');
 
     }

@@ -27,21 +27,13 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="main-header-three__social-and-top-menu">
+                    <div class="main-header-three__social">
                         <div class="main-header-three__social">
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-google-plus-g"></i></a>
                             <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             <a href="#"><i class="fas fa-wifi"></i></a>
-                        </div>
-                        <div class="main-header-three__top-menu">
-                            <ul class="main-header-three__top-menu-list list-unstyled">
-                                <li><a href="faq.html">Our Faqs</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -66,22 +58,6 @@
                                     <li>
                                         <a href="{{url('/event')}}">Events</a>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="speaker.html">Speaker</a></li>
-                                            <li><a href="archives-speakers.html">Archives Speakers</a></li>
-                                            <li><a href="speaker-single.html">Speaker Single</a></li>
-                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="venue.html">Venue</a></li>
-                                            <li><a href="sponsors.html">Sponsors</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="404.html">404 Error</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
-                                    </li>
                                    
                                     <li>
                                         <a href="{{route('blog')}}">Blog</a>
@@ -89,19 +65,21 @@
                                     <li>
                                         <a href="{{url('/contact')}}">Contact</a>
                                     </li>
+                                    <li>
+                                        <a href="{{url('/gallery')}}">Gallery</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="main-menu-three__right">
                             <div class="main-menu-three__login-box">
-                                <div class="icon">
-                                    <span class="icon-user"></span>
-                                </div>
                                 <div class="select-box">
                                     <select class="wide">
                                         <option data-display="Join With Us">Join With Us</option>
-                                        <option value="1">Login</option>
-                                        <option value="2">Register</option>
+
+                                      <option value="1"><a href="{{route('attendee.login')}}">Login</a></option>
+                                       
+                                        <option value="1"><a href="{{route('attendee.register')}}">Register</a></option>
                                     </select>
                                 </div>
                             </div>
